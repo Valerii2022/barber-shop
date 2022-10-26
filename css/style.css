@@ -1,0 +1,291 @@
+/* * { 
+  margin: 0;
+  padding: 0;
+  border: 0;
+}*/
+
+:root {
+  --accent-color: #ff6c00;
+  --white-color: #ffffff;
+  --primary-color: #303030;
+  --uptitle-secondary-color: rgba(157, 164, 189, 0.6);
+  --color-on-dark-bg: #9da4bd;
+  --text-color: #555555;
+  --bg-image-color: #191c26;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+
+.link {
+  font-weight: 600;
+  line-height: 1.3333;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+
+  color: var(--white-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.button {
+  font-weight: 600;
+  line-height: 1.3333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+  background-color: transparent;
+
+  border: 2px solid var(--accent-color);
+}
+
+.hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.uptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  text-transform: uppercase;
+}
+
+.dark-bg {
+  color: var(--uptitle-secondary-color);
+}
+
+.title {
+  font-family: "Raleway";
+  font-size: 42px;
+  line-height: 1.1667;
+  letter-spacing: 0.05em;
+}
+
+.white {
+  color: var(--white-color);
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 1.6667;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color);
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.8571;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color);
+}
+
+/* header */
+
+.header {
+  background-color: var(--color-on-dark-bg);
+}
+.logo {
+}
+.header-nav {
+}
+.header-nav .link {
+}
+
+.header-nav .link:hover,
+.header-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.header-contacts {
+  text-transform: uppercase;
+}
+
+.header-contacts:hover,
+.header-contacts:focus {
+  color: var(--accent-color);
+}
+
+/* hero */
+
+.hero {
+  background-image: url(../images/hero1.jpg);
+}
+
+.hero-list {
+}
+.hero-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 72px;
+  line-height: 1.1806;
+  letter-spacing: 0.05em;
+
+  color: var(--white-color);
+}
+.hero-subtitle {
+  font-size: 18px;
+  line-height: 1.6667;
+  letter-spacing: 0.02em;
+
+  color: var(--color-on-dark-bg);
+}
+
+.hero .link {
+  font-size: 11px;
+  line-height: 1.3636;
+  letter-spacing: 0.2em;
+
+  color: var(--primary-color);
+}
+
+.hero .link:hover,
+.hero .link:focus {
+  color: var(--accent-color);
+}
+
+/* about */
+
+.about-list {
+}
+
+/* Services and prices */
+
+.prices {
+  background-image: url(../images/services.jpg);
+}
+.prices-list {
+}
+.prices-text {
+  font-size: 18px;
+  line-height: 1.6667;
+  letter-spacing: 0.02em;
+
+  color: var(--color-on-dark-bg);
+}
+
+/* Why people come to us */
+
+.numbers {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.3571;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.numbers sup {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.375;
+  text-align: center;
+
+  color: #ff6c00;
+  color: var(--accent-color);
+}
+
+.descr {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  text-align: center;
+}
+
+/* portfolio */
+
+.portfolio-list {
+}
+
+/* our barbers*/
+
+.barbers-name {
+  font-size: 18px;
+  line-height: 1.3889;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.position {
+  font-size: 14px;
+  line-height: 1.3571;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+}
+
+/* online booking and contacts */
+
+.booking-form {
+  background-color: var(--bg-image-color);
+}
+
+.input-field {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white-color);
+
+  background-color: transparent;
+  border: none;
+}
+
+.contacts {
+  background-image: url(../images/contacts.jpg);
+}
+
+.address .link {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.6667;
+  letter-spacing: 0.02em;
+  color: var(--color-on-dark-bg);
+}
+
+.address .map-link {
+  font-weight: 700;
+}
+
+.address .tel-link,
+.adress .mail-link {
+  font-weight: 400;
+}
+
+.mail-link {
+  text-decoration-line: underline;
+}
+
+.subtitle-contacts {
+  color: var(--color-on-dark-bg);
+}
+
+/* footer */
+
+.footer {
+}
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  letter-spacing: 0.2em;
+  color: var(--color-on-dark-bg);
+}
+.footer-list .link {
+  font-size: 11px;
+  line-height: 1.3636;
+  letter-spacing: 0.2em;
+  color: var(--primary-color);
+}
