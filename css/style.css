@@ -13,6 +13,7 @@
   --text-color: #555555;
   --bg-image-color: #191c26;
 }
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
@@ -61,9 +62,6 @@ body {
   text-transform: uppercase;
 }
 
-.dark-bg {
-  color: var(--uptitle-secondary-color);
-}
 
 .title {
   font-family: "Raleway";
@@ -97,12 +95,12 @@ body {
 .header {
   background-color: var(--color-on-dark-bg);
 }
-.logo {
-}
-.header-nav {
-}
-.header-nav .link {
-}
+
+.logo {}
+
+.header-nav {}
+
+.header-nav .link {}
 
 .header-nav .link:hover,
 .header-nav .link:focus {
@@ -118,14 +116,20 @@ body {
   color: var(--accent-color);
 }
 
+.header-btn {}
+
 /* hero */
 
 .hero {
   background-image: url(../images/hero1.jpg);
 }
 
-.hero-list {
+.hero-list {}
+
+.hero-uptitle {
+  color: var(--uptitle-secondary-color);
 }
+
 .hero-title {
   font-family: "Raleway", sans-serif;
   font-size: 72px;
@@ -134,6 +138,7 @@ body {
 
   color: var(--white-color);
 }
+
 .hero-subtitle {
   font-size: 18px;
   line-height: 1.6667;
@@ -157,16 +162,20 @@ body {
 
 /* about */
 
-.about-list {
-}
+.about-list {}
 
 /* Services and prices */
 
 .prices {
   background-image: url(../images/services.jpg);
 }
-.prices-list {
+
+.prices-uptitle {
+  color: var(--uptitle-secondary-color);
 }
+
+.prices-list {}
+
 .prices-text {
   font-size: 18px;
   line-height: 1.6667;
@@ -191,7 +200,6 @@ body {
   line-height: 1.375;
   text-align: center;
 
-  color: #ff6c00;
   color: var(--accent-color);
 }
 
@@ -204,8 +212,7 @@ body {
 
 /* portfolio */
 
-.portfolio-list {
-}
+.portfolio-list {}
 
 /* our barbers*/
 
@@ -274,8 +281,8 @@ body {
 
 /* footer */
 
-.footer {
-}
+.footer {}
+
 .copyright {
   font-weight: 600;
   font-size: 11px;
@@ -283,6 +290,7 @@ body {
   letter-spacing: 0.2em;
   color: var(--color-on-dark-bg);
 }
+
 .footer-list .link {
   font-size: 11px;
   line-height: 1.3636;
