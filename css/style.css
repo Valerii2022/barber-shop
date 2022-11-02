@@ -3,7 +3,7 @@
   padding: 0;
   border: 0;
 }*/
-
+/* ----------------------------------------------------------------general styles */
 :root {
   --accent-color: #ff6c00;
   --white-color: #ffffff;
@@ -34,6 +34,8 @@ ul {
   padding: 0;
 }
 
+/* ----------------------------------------------------------------utilits */
+
 .container {
   width: 1170px;
   margin-left: auto;
@@ -55,6 +57,14 @@ ul {
 }
 
 .button {
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  width: 160px;
+  padding-right: auto;
+  padding-left: auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
   font-weight: 600;
   line-height: 1.3333;
   letter-spacing: 0.09em;
@@ -109,21 +119,44 @@ ul {
   color: var(--text-color);
 }
 
-/* header */
+/* ----------------------------------------------------------------header */
 
 .header {
   background-color: var(--color-on-dark-bg);
 }
 
-.logo {}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-right: 20px;
+}
 
-.header-nav {}
+.menu {
+  display: flex;
+  align-items: center;
+}
 
-.header-nav .link {}
+.logo {
+  margin-right: 130px;
+}
 
-.header-nav .link:hover,
-.header-nav .link:focus {
+.header-list {
+  display: flex;
+}
+
+.header-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.header-list .link:hover,
+.header-list .link:focus {
   color: var(--accent-color);
+}
+
+.booking .header-contacts {
+  margin-right: 40px;
 }
 
 .header-contacts {
@@ -137,19 +170,32 @@ ul {
 
 .header-btn {}
 
-/* hero */
+/* ----------------------------------------------------------------hero */
 
-.hero {
-  background-image: url(../images/hero1.jpg);
+.hero {}
+
+.hero-wrapper {
+  display: flex;
 }
 
-.hero-list {}
+.hero-list {
+  width: 100px;
+}
+
+.hero-main {
+  background: url(../images/hero1.jpg) no-repeat;
+  padding: 272px 0 208px 100px;
+  width: 100%;
+}
 
 .hero-uptitle {
   color: var(--uptitle-secondary-color);
 }
 
 .hero-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
   font-family: "Raleway", sans-serif;
   font-size: 72px;
   line-height: 1.1806;
@@ -159,6 +205,8 @@ ul {
 }
 
 .hero-subtitle {
+  width: 370px;
+
   font-size: 18px;
   line-height: 1.6667;
   letter-spacing: 0.02em;
@@ -179,11 +227,11 @@ ul {
   color: var(--accent-color);
 }
 
-/* about */
+/* ----------------------------------------------------------------about */
 
 .about-list {}
 
-/* Services and prices */
+/* ----------------------------------------------------------------Services and prices */
 
 .prices {
   background-image: url(../images/services.jpg);
@@ -203,7 +251,7 @@ ul {
   color: var(--color-on-dark-bg);
 }
 
-/* Why people come to us */
+/* ----------------------------------------------------------------Why people come to us */
 
 .numbers {
   font-weight: 700;
@@ -229,11 +277,11 @@ ul {
   text-align: center;
 }
 
-/* portfolio */
+/* ----------------------------------------------------------------portfolio */
 
 .portfolio-list {}
 
-/* our barbers*/
+/* ----------------------------------------------------------------our barbers*/
 
 .barbers-name {
   font-size: 18px;
@@ -251,7 +299,7 @@ ul {
   color: var(--accent-color);
 }
 
-/* online booking and contacts */
+/* ----------------------------------------------------------------online booking and contacts */
 
 .booking-form {
   background-color: var(--bg-image-color);
@@ -298,7 +346,7 @@ ul {
   color: var(--color-on-dark-bg);
 }
 
-/* footer */
+/*---------------------------------------------------------------- footer */
 
 .footer {}
 
