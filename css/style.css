@@ -353,43 +353,48 @@ img {
   margin: 0 auto;
 }
 
-/* ----------------------------------------------------------------Why people come to us */
+/* ----------------------------------------------------------------benefits section */
 
-.why-people {
+.benefits {
   padding: 120px 0;
 }
 
-.why-people-wrapper {
+.benefits-wrapper {
   display: flex;
   gap: 30px;
 
 }
 
-.why-people-list {
+.benefits-lisr-wrap {
+  display: flex;
+  width: 50%;
+}
+
+.benefits-list {
   display: flex;
   flex-wrap: wrap;
   width: 50%;
   padding: 0 100px;
 }
 
-.why-people-list .item {
+.benefits-list .item {
   width: 170px;
   height: 133px;
   padding: 20px 24px;
   background: var(--bg-color);
 }
 
-.why-people-list .item:nth-child(2n) {
+/* .benefits-list .item:nth-child(2n) {
   margin-top: 30px;
 }
 
-.why-people-list .item:nth-child(2) {
+.benefits-list .item:nth-child(2) {
   margin-top: 35px;
 }
 
-.why-people-list .item:nth-child(2n+1) {
+.benefits-list .item:nth-child(2n+1) {
   margin-right: 30px;
-}
+} */
 
 .numbers {
   display: block;
@@ -417,21 +422,21 @@ img {
   text-align: center;
 }
 
-.why-people-main {
+.benefits-main {
   width: 50%;
 }
 
-.why-people-main .uptitle {
+.benefits-main .uptitle {
   margin-bottom: 20px;
   padding-left: 80px;
 }
 
-.why-people-main .title {
+.benefits-main .title {
   margin-bottom: 20px;
   padding-right: 140px;
 }
 
-.why-people-main .subtitle {
+.benefits-main .subtitle {
   padding-right: 70px;
 }
 
