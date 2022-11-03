@@ -167,17 +167,11 @@ img {
   color: var(--accent-color);
 }
 
-.booking {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-
-.booking .header-contacts {
+.header-booking .header-contacts {
   margin-right: 40px;
 }
 
-.booking .header-btn {
+.header-booking .header-btn {
   margin-right: 20px;
 }
 
@@ -389,6 +383,10 @@ img {
   margin-top: 30px;
 }
 
+.why-people-list .item:nth-child(2) {
+  margin-top: 35px;
+}
+
 .why-people-list .item:nth-child(2n+1) {
   margin-right: 30px;
 }
@@ -541,6 +539,12 @@ img {
 
   background-color: transparent;
   border: none;
+}
+
+.textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 44px;
 }
 
 .contacts {
