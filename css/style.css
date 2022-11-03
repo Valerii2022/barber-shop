@@ -13,6 +13,8 @@
   --text-color: #555555;
   --bg-image-color: #191c26;
   --bg-color: #F7F7F7;
+  --bg-image-color: rgba(17, 19, 25, 1);
+  /* --bg-image-color: #111319; */
 }
 
 body {
@@ -80,7 +82,10 @@ img {
   background-color: transparent;
 
   border: 2px solid var(--accent-color);
-  box
+}
+
+.button:hover {
+  color: var(--accent-color);
 }
 
 .hidden {
@@ -162,6 +167,12 @@ img {
   color: var(--accent-color);
 }
 
+.booking {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
 .booking .header-contacts {
   margin-right: 40px;
 }
@@ -179,20 +190,17 @@ img {
   color: var(--accent-color);
 }
 
-.header-btn {
-}
+.header-btn {}
 
 /* ----------------------------------------------------------------hero */
 
-.hero {
-}
+.hero {}
 
 .hero-wrapper {
   display: flex;
 }
 
-.hero-list {
-}
+.hero-list {}
 
 .hero-list .item {
   writing-mode: vertical-lr;
@@ -298,7 +306,7 @@ img {
 /* ----------------------------------------------------------------Services and prices */
 
 .prices {
-  background-image: url(../images/services.jpg);
+  background: url(../images/services.jpg);
   padding-top: 116px;
   padding-bottom: 124px;
 }
@@ -309,33 +317,33 @@ img {
   margin-bottom: 20px;
 }
 
-.prices .title{
-   margin-bottom: 44px;
+.prices .title {
+  margin-bottom: 44px;
 }
 
-.services-prices{
-   display: flex;
-   justify-content: space-between;
-   gap: 30px;
-   margin-bottom: 44px;
+.services-prices {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 44px;
 }
 
-.services-prices .prices-list{
-width: 50%;
+.services-prices .prices-list {
+  width: 50%;
 }
 
 .prices-list {
-   padding: 30px 20px;
-   background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+  padding: 30px 20px;
+  background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
-.prices-list .item{
-   display: flex;
-   justify-content: space-between;
+.prices-list .item {
+  display: flex;
+  justify-content: space-between;
 }
 
-.prices-list .item:not(:last-child){
-   margin-bottom: 20px;
+.prices-list .item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .prices-text {
@@ -346,47 +354,47 @@ width: 50%;
   color: var(--color-on-dark-bg);
 }
 
-.prices-btn{
-   display: block;
-   margin: 0 auto;
+.prices-btn {
+  display: block;
+  margin: 0 auto;
 }
 
 /* ----------------------------------------------------------------Why people come to us */
 
-.why-people{
-   padding: 120px 0;
+.why-people {
+  padding: 120px 0;
 }
 
-.why-people-wrapper{
-   display: flex;
-   gap: 30px;
+.why-people-wrapper {
+  display: flex;
+  gap: 30px;
 
 }
 
-.why-people-list{
-   display: flex;
-   flex-wrap: wrap;
-   width: 50%;
-   padding: 0 100px;
+.why-people-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding: 0 100px;
 }
 
-.why-people-list .item{
-   width: 170px;
-   height: 133px;
-   padding: 20px 24px;
-   background: var(--bg-color);
+.why-people-list .item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  background: var(--bg-color);
 }
 
-.why-people-list .item:nth-child(2n){
-   margin-top: 30px;
+.why-people-list .item:nth-child(2n) {
+  margin-top: 30px;
 }
 
-.why-people-list .item:nth-child(2n+1){
-   margin-right: 30px;
+.why-people-list .item:nth-child(2n+1) {
+  margin-right: 30px;
 }
 
 .numbers {
-   display: block;
+  display: block;
 
   font-weight: 700;
   font-size: 42px;
@@ -411,51 +419,51 @@ width: 50%;
   text-align: center;
 }
 
-.why-people-main{
-   width: 50%;
+.why-people-main {
+  width: 50%;
 }
 
-.why-people-main .uptitle{
-   margin-bottom: 20px;
-   padding-left: 80px;
+.why-people-main .uptitle {
+  margin-bottom: 20px;
+  padding-left: 80px;
 }
 
-.why-people-main .title{
-   margin-bottom: 20px;
-   padding-right: 140px;
+.why-people-main .title {
+  margin-bottom: 20px;
+  padding-right: 140px;
 }
 
-.why-people-main .subtitle{
-   padding-right: 70px;
+.why-people-main .subtitle {
+  padding-right: 70px;
 }
 
 /* ----------------------------------------------------------------our barbers*/
 
-.barbers{
-   padding: 120px 0;
-   background: var(--bg-color);
+.barbers {
+  padding: 120px 0;
+  background: var(--bg-color);
 }
 
-.barbers .uptitle{
-   margin-bottom: 20px;
-   padding-left: 80px;
+.barbers .uptitle {
+  margin-bottom: 20px;
+  padding-left: 80px;
 }
 
-.barbers .title{
-   margin-bottom: 44px;
+.barbers .title {
+  margin-bottom: 44px;
 }
 
-.barbers-list{
-   display: flex;
-   gap: 30px;
+.barbers-list {
+  display: flex;
+  gap: 30px;
 }
 
-.barbers-card{
-   padding: 30px 82px 0 82px;
+.barbers-card {
+  padding: 30px 82px 0 82px;
 }
 
 .barbers-name {
-   margin-bottom: 8px;
+  margin-bottom: 8px;
 
   font-size: 18px;
   line-height: 1.3889;
@@ -464,7 +472,7 @@ width: 50%;
 }
 
 .position {
-   margin-bottom: 30px;
+  margin-bottom: 30px;
 
   font-size: 14px;
   line-height: 1.3571;
@@ -474,33 +482,33 @@ width: 50%;
   color: var(--accent-color);
 }
 
-.social-link{
-   display: flex;
-   justify-content: space-between;
-   list-style: none;
+.social-link {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
 
-.social-link .item{
-   width: 44px;
-   height: 44px;
-   background-color: #ffffff;
-   border-radius: 50%;
+.social-link .item {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
 }
 
 /* ----------------------------------------------------------------portfolio */
 
-.portfolio{
-   padding: 120px 0;
+.portfolio {
+  padding: 120px 0;
 }
 
-.portfolio .uptitle{
-   margin-bottom: 44px;
-   padding-left: 80px;
+.portfolio .uptitle {
+  margin-bottom: 44px;
+  padding-left: 80px;
 }
 
 .portfolio-list {
-   display: flex;
-   gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 /* ----------------------------------------------------------------online booking and contacts */
@@ -510,17 +518,17 @@ width: 50%;
   padding: 130px 0 120px 0;
 }
 
-.booking-form-wrapper{
-   display: flex;
-   gap: 30px;
+.booking-form-wrapper {
+  display: flex;
+  gap: 30px;
 }
 
-.booking{
-   width: 50%;
+.booking {
+  width: 50%;
 }
 
-.booking .title{
-   margin-bottom: 44px;
+.booking .title {
+  margin-bottom: 44px;
 }
 
 .input-field {
@@ -536,27 +544,27 @@ width: 50%;
 }
 
 .contacts {
-   width: 50%;
-   padding-left: 100px;
+  width: 50%;
+  padding-left: 100px;
 }
 
-.contacts .title{
-   margin-bottom: 40px;
+.contacts .title {
+  margin-bottom: 40px;
 }
 
-.contacts .uptitle{
-   margin-bottom: 20px;
-   padding-left: 80px;
+.contacts .uptitle {
+  margin-bottom: 20px;
+  padding-left: 80px;
 }
 
-.address{
-   max-width: 270px;
-   margin-bottom: 70px;
+.address {
+  max-width: 270px;
+  margin-bottom: 70px;
 }
 
 .address .link {
-   padding-left: 40px;
-   display: inline-block;
+  padding-left: 40px;
+  display: inline-block;
 
   font-style: normal;
   font-size: 18px;
@@ -565,8 +573,8 @@ width: 50%;
   color: var(--color-on-dark-bg);
 }
 
-.address .link:not(:last-child){
-   margin-bottom: 20px;
+.address .link:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .address .map-link {
@@ -589,12 +597,12 @@ width: 50%;
 /*---------------------------------------------------------------- footer */
 
 .footer {
-   padding: 56px 0;
+  padding: 56px 0;
 }
 
-.footer-wrapper{
-   display: flex;
-   justify-content: space-between;
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .copyright {
@@ -605,13 +613,13 @@ width: 50%;
   color: var(--color-on-dark-bg);
 }
 
-.footer-list{
-   display: flex;
-   list-style: none;
+.footer-list {
+  display: flex;
+  list-style: none;
 }
 
 .footer-list .link {
-   margin-left: 40px;
+  margin-left: 40px;
 
   font-size: 11px;
   line-height: 1.3636;
