@@ -258,6 +258,7 @@ img {
 
 .about-wrapper {
   display: flex;
+  gap: 30px;
 }
 
 .about {
@@ -266,11 +267,10 @@ img {
 
 .about-list {
   display: flex;
+  gap: 30px;
 }
 
-.about-list .item {
-  margin-right: 30px;
-}
+.about-list .item {}
 
 .about-main {
   padding-right: 100px;
@@ -323,7 +323,7 @@ img {
 }
 
 .services-prices .prices-list {
-  width: 50%;
+  width: calc((100% - 30px) / 2);
 }
 
 .prices-list {
