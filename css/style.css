@@ -103,6 +103,18 @@ img {
   text-transform: uppercase;
 }
 
+.uptitle::before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background: var(--uptitle-secondary-color);
+
+  margin-right: 20px;
+
+  vertical-align: middle;
+}
+
 .title {
   font-family: 'Raleway';
   font-size: 42px;
@@ -133,7 +145,10 @@ img {
 /* ----------------------------------------------------------------header */
 
 .header {
-  background-color: var(--color-on-dark-bg);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .header-wrapper {
@@ -194,7 +209,14 @@ img {
   display: flex;
 }
 
-.hero-list {}
+.hero-list .::after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 60px;
+  background: var(--uptitle-secondary-color);
+  margin-left: 27px;
+}
 
 .hero-list .item {
   writing-mode: vertical-lr;
@@ -209,6 +231,7 @@ img {
 }
 
 .hero-main {
+  background-color: var(--bg-image-color);
   background: url(../images/hero1.jpg) 0 0 / cover no-repeat;
   padding: 272px 0 208px 100px;
   width: 100%;
@@ -216,7 +239,6 @@ img {
 
 .hero-uptitle {
   color: var(--uptitle-secondary-color);
-  padding-left: 80px;
 }
 
 .hero-title {
@@ -278,7 +300,6 @@ img {
 
 .about-main .uptitle {
   margin-bottom: 20px;
-  padding-left: 80px;
 }
 
 .about-main .title {
@@ -307,7 +328,6 @@ img {
 
 .prices-uptitle {
   color: var(--uptitle-secondary-color);
-  padding-left: 80px;
   margin-bottom: 20px;
 }
 
@@ -429,7 +449,6 @@ img {
 
 .benefits-main .uptitle {
   margin-bottom: 20px;
-  padding-left: 80px;
 }
 
 .benefits-main .title {
@@ -450,7 +469,6 @@ img {
 
 .barbers .uptitle {
   margin-bottom: 20px;
-  padding-left: 80px;
 }
 
 .barbers .title {
@@ -507,7 +525,6 @@ img {
 
 .portfolio .uptitle {
   margin-bottom: 44px;
-  padding-left: 80px;
 }
 
 .portfolio-list {
@@ -564,7 +581,6 @@ img {
 
 .contacts .uptitle {
   margin-bottom: 20px;
-  padding-left: 80px;
 }
 
 .address {
