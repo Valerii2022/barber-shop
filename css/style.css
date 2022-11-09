@@ -207,28 +207,31 @@ img {
 
 .hero-wrapper {
   display: flex;
+  gap: 30px;
 }
 
-.hero-list .::after {
+.hero-list .item:last-child::before {
   content: '';
   display: inline-block;
   width: 1px;
   height: 60px;
   background: var(--uptitle-secondary-color);
-  margin-left: 27px;
+}
+
+.hero-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  width: 70px;
 }
 
 .hero-list .item {
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
-  margin-left: 27px;
-  margin-right: 58px;
 }
 
-.hero-list .item:first-child {
-  margin-top: 370px;
-  margin-bottom: 40px;
-}
+.hero-list .item:last-child {}
 
 .hero-main {
   background-color: var(--bg-image-color);
@@ -321,7 +324,10 @@ img {
 /* ----------------------------------------------------------------Services and prices */
 
 .prices {
-  background: url(../images/services.jpg);
+  background-color: var(--bg-image-color);
+  background-image: linear-gradient(to right, rgba(17, 19, 25, 0.6), rgba(17, 19, 25, 0.6)), url(../images/services.jpg);
+  max-width: 1600px;
+  height: 692px;
   padding-top: 116px;
   padding-bottom: 124px;
 }
@@ -418,7 +424,8 @@ img {
 }
 
 .numbers {
-  display: block;
+  display: flex;
+  justify-content: center;
 
   font-weight: 700;
   font-size: 42px;
@@ -428,6 +435,8 @@ img {
 }
 
 .numbers sup {
+  align-self: center;
+
   font-weight: 600;
   font-size: 16px;
   line-height: 1.375;
