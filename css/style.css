@@ -199,11 +199,13 @@ img {
   color: var(--accent-color);
 }
 
-.header-btn {}
+.header-btn {
+}
 
 /* ----------------------------------------------------------------hero */
 
-.hero {}
+.hero {
+}
 
 .hero-wrapper {
   display: flex;
@@ -233,7 +235,8 @@ img {
   margin-bottom: 40px;
 }
 
-.hero-list .item:last-child {}
+.hero-list .item:last-child {
+}
 
 .hero-main {
   background-color: var(--bg-image-color);
@@ -298,7 +301,8 @@ img {
   gap: 30px;
 }
 
-.about-list .item {}
+.about-list .item {
+}
 
 .about-main {
   padding-right: 100px;
@@ -362,11 +366,11 @@ img {
 }
 
 .prices-list:first-child {
-  background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
 .prices-list:last-child {
-  background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
 .prices-list .item {
@@ -387,7 +391,6 @@ img {
   flex-grow: 1;
   display: block;
   background-color: rgba(157, 164, 189, 0.12);
-  ;
 }
 
 .prices-text {
@@ -593,7 +596,12 @@ img {
   background-color: var(--bg-image-color);
   background-image: url(../images/contacts.png);
   background-repeat: no-repeat;
-  b padding: 130px 0 120px 0;
+  background-position: right;
+  background-size: calc(50% - 15px) 100%;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 130px 0 120px 0;
 }
 
 .booking-form-wrapper {
@@ -602,7 +610,7 @@ img {
 }
 
 .booking {
-  width: 50%;
+  width: calc(50% + 15px);
 }
 
 .booking .title {
@@ -628,7 +636,7 @@ img {
 }
 
 .contacts {
-  width: 50%;
+  width: calc(50% - 15px);
   padding-left: 100px;
 }
 
