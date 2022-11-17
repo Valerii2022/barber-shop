@@ -37,7 +37,7 @@
       </div>
       <div class="header-booking">
         <a href="tel:+380441111111" class="header-contacts link">+38 044 111 11 11</a>
-        <button type="button" class="header-btn button">Online-booking</button>
+        <button type="button" class="header-btn button" data-modal-open>Online-booking</button>
       </div>
     </div>
   </header>
@@ -366,6 +366,21 @@
       </ul>
     </div>
   </footer>
+  <!-- backdrop -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <div class="btn-wrap dark">
+        <button class="modal-btn transparent" type="button">cita previa</button>
+        <button class="modal-btn accent-bg" type="button" data-modal-close>cita previa</button>
+      </div>
+      <div class="btn-wrap light">
+        <button class="modal-btn transparent" type="button">cita previa</button>
+        <button class="modal-btn accent-bg" type="button">cita previa</button>
+      </div>
+    </div>
+  </div>
+  <!-- backdrop script -->
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>

@@ -65,6 +65,9 @@ img {
 }
 
 .button {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  cursor: pointer;
   border: 1px solid var(--accent-color);
   border-radius: 25px;
   width: 160px;
@@ -177,6 +180,10 @@ img {
   margin-right: 30px;
 }
 
+.header-list .link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .header-list .link:hover,
 .header-list .link:focus {
   color: var(--accent-color);
@@ -191,6 +198,7 @@ img {
 }
 
 .header-contacts {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-transform: uppercase;
 }
 
@@ -199,13 +207,11 @@ img {
   color: var(--accent-color);
 }
 
-.header-btn {
-}
+.header-btn {}
 
 /* ----------------------------------------------------------------hero */
 
-.hero {
-}
+.hero {}
 
 .hero-wrapper {
   display: flex;
@@ -235,8 +241,7 @@ img {
   margin-bottom: 40px;
 }
 
-.hero-list .item:last-child {
-}
+.hero-list .item:last-child {}
 
 .hero-main {
   background-color: var(--bg-image-color);
@@ -273,6 +278,8 @@ img {
 }
 
 .hero .link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   font-size: 11px;
   line-height: 1.3636;
   letter-spacing: 0.2em;
@@ -301,8 +308,7 @@ img {
   gap: 30px;
 }
 
-.about-list .item {
-}
+.about-list .item {}
 
 .about-main {
   padding-right: 100px;
@@ -557,6 +563,8 @@ img {
 }
 
 .social-link .icon-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -654,6 +662,8 @@ img {
 }
 
 .address .link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   display: flex;
 
   font-style: normal;
@@ -669,14 +679,18 @@ img {
 
 .address .social-network {
   margin-right: 16px;
+  fill: currentColor;
 }
+
+
+/* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 
 .address .map-link {
   font-weight: 700;
 }
 
 .address .tel-link,
-.adress .mail-link {
+.address .mail-link {
   font-weight: 400;
 }
 
@@ -686,6 +700,10 @@ img {
 
 .subtitle-contacts {
   color: var(--color-on-dark-bg);
+}
+
+.address .link:hover {
+  color: var(--accent-color);
 }
 
 /*---------------------------------------------------------------- footer */
@@ -729,4 +747,83 @@ img {
   background: var(--uptitle-secondary-color);
 
   vertical-align: middle;
+}
+
+/* --------------------------------------------------backdrop */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  opacity: 1;
+  background-color: rgba(229, 229, 229, 0.2);
+}
+
+.modal {
+  transform: translateX(-50%);
+
+  position: absolute;
+  top: 83px;
+  left: 50%;
+
+  width: 1000px;
+  height: 160px;
+  display: flex;
+  gap: 27px;
+  justify-content: space-between;
+
+  background-color: transparent;
+}
+
+.btn-wrap {
+  width: calc((100% - 27px) / 2);
+  padding-top: 40px;
+  padding-left: 69px;
+  padding-right: 69px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.backdrop .dark {
+  background-color: var(--primary-color);
+}
+
+.backdrop .light {
+  background-color: var(--white-color);
+}
+
+.light .transparent {
+  color: var(--primary-color);
+}
+
+.modal-btn {
+  cursor: pointer;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  padding: 12px 40px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop .transparent {
+  background-color: transparent;
+}
+
+.backdrop .accent-bg {
+  background-color: var(--accent-color);
 }
