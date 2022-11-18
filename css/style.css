@@ -685,7 +685,7 @@ img {
 
 .address .social-network {
   margin-right: 16px;
-  fill: currentColor;
+  stroke: currentColor;
 }
 
 .address .map-link {
