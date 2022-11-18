@@ -207,13 +207,11 @@ img {
   color: var(--accent-color);
 }
 
-.header-btn {
-}
+.header-btn {}
 
 /* ----------------------------------------------------------------hero */
 
-.hero {
-}
+.hero {}
 
 .hero-wrapper {
   display: flex;
@@ -243,8 +241,7 @@ img {
   margin-bottom: 40px;
 }
 
-.hero-list .item:last-child {
-}
+.hero-list .item:last-child {}
 
 .hero-main {
   background-color: var(--bg-image-color);
@@ -311,8 +308,7 @@ img {
   gap: 30px;
 }
 
-.about-list .item {
-}
+.about-list .item {}
 
 .about-main {
   padding-right: 100px;
@@ -669,6 +665,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   display: flex;
+  align-items: center;
 
   font-style: normal;
   font-size: 18px;
@@ -698,6 +695,11 @@ img {
 .address .tel-link,
 .address .mail-link {
   font-weight: 400;
+}
+
+.map-link .social-network {
+  margin-top: 5px;
+  align-self: start;
 }
 
 .mail-link {
