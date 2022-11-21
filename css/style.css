@@ -793,7 +793,7 @@ img {
   left: 50%;
 
   width: 1000px;
-  height: 160px;
+  min-height: 160px;
   display: flex;
   gap: 27px;
   justify-content: space-between;
