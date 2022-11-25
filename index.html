@@ -321,9 +321,17 @@
         <section class="section booking">
           <h2 class="title white">Online-booking</h2>
           <form class="form" action="#">
-            <input type="text" name="name" placeholder="name*" class="input-field" />
-            <input type="tel" name="phone" placeholder="phone*" class="input-field" />
-            <textarea name="message" placeholder="message*" cols="30" rows="10" class="input-field textarea"></textarea>
+            <div class="input-field-wrap">
+              <label class="input-field-label">
+                <input type="text" name="name" placeholder="name*" class="input-field" autocomplete="off" />
+              </label>
+              <label class="input-field-label">
+                <input type="tel" name="phone" placeholder="phone*" class="input-field" autocomplete="off" />
+              </label>
+            </div>
+            <label class="input-field-label">
+              <textarea name="message" placeholder="message*" class="input-textarea"></textarea>
+            </label>
             <button type="submit" class="button">Send</button>
           </form>
         </section>
@@ -383,6 +391,8 @@
   </div>
   <!-- backdrop script -->
   <script src="./js/modal.js"></script>
+  <!-- form sending script -->
+  <script src="./js/form-send.js"></script>
 </body>
 
 </html>
