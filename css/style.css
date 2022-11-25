@@ -909,6 +909,8 @@ img {
 /* -----------------------------------------------------------form backdrop */
 
 .backdrop-form {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   position: fixed;
   top: 0;
   left: 0;
@@ -917,17 +919,64 @@ img {
 }
 
 .modal-form {
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 528px;
   min-height: 581px;
   background-color: var(--white-color);
 }
 
-.is-hidden2 {
+.backdrop-form.is-hidden2 {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.backdrop-form.is-hidden2 .modal-form {}
+
+.form-close-btn {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+
+.form-close-btn:hover,
+.form-close-btn:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.form-close-icon {
+  fill: currentColor;
+}
+
+.modal-form-title {
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-color);
 }

@@ -392,7 +392,21 @@
   <!-- form backdrop-->
   <div class="backdrop-form is-hidden2" data-modal2>
     <div class="modal-form">
-      <button class="form-close-btn" data-modal-close2>x</button>
+      <button class="form-close-btn" data-modal-close2>
+        <svg class="form-close-icon" width="18" height="18">
+          <use href="./images/icons-main.svg#icon-close-form-modal"></use>
+        </svg>
+      </button>
+      <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
+      <form class="backdrop-form" action="#">
+        <div class="input-wrap">
+          <input type="text" class="form-input" name="user-name" id="user-name">
+          <label class="form-label" for="user-name">Ім'я</label>
+          <svg class="input-icon" width="18" height="18">
+            <use href=""></use>
+          </svg>
+        </div>
+      </form>
     </div>
   </div>
   <!-- backdrop script -->
