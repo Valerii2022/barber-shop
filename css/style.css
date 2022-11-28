@@ -207,11 +207,13 @@ img {
   color: var(--accent-color);
 }
 
-.header-btn {}
+.header-btn {
+}
 
 /* ----------------------------------------------------------------hero */
 
-.hero {}
+.hero {
+}
 
 .hero-wrapper {
   display: flex;
@@ -234,7 +236,6 @@ img {
   display: flex;
   gap: 40px;
   align-items: center;
-
 }
 
 .hero-list::before {
@@ -245,9 +246,11 @@ img {
   background: var(--uptitle-secondary-color);
 }
 
-.hero-list .item {}
+.hero-list .item {
+}
 
-.hero-list .item:last-child {}
+.hero-list .item:last-child {
+}
 
 .hero-main {
   background-color: var(--bg-image-color);
@@ -314,7 +317,8 @@ img {
   gap: 30px;
 }
 
-.about-list .item {}
+.about-list .item {
+}
 
 .about-main {
   padding-right: 100px;
@@ -843,7 +847,8 @@ img {
   opacity: 1;
   background-color: rgba(229, 229, 229, 0.2);
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -916,18 +921,22 @@ img {
 /* -----------------------------------------------------------form backdrop */
 
 .backdrop-form {
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+
+  background-color: rgba(255, 108, 0, 0.5);
 }
 
 .modal-form {
   transform: translate(-50%, -50%);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   padding: 40px;
@@ -937,6 +946,7 @@ img {
   width: 528px;
   min-height: 581px;
   background-color: var(--white-color);
+  z-index: 100;
 }
 
 .backdrop-form.is-hidden2 {
@@ -945,7 +955,8 @@ img {
   pointer-events: none;
 }
 
-.backdrop-form.is-hidden2 .modal-form {}
+.backdrop-form.is-hidden2 .modal-form {
+}
 
 .form-close-btn {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -961,6 +972,7 @@ img {
   border: 1px solid var(--primary-color);
   border-radius: 50%;
   cursor: pointer;
+  outline: none;
 
   background-color: var(--white-color);
   color: var(--primary-color);
@@ -984,6 +996,98 @@ img {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
+
+  color: var(--primary-color);
+}
+
+.backdrop-sign-form {
+}
+
+.input-wrap {
+  position: relative;
+  padding-top: 18px;
+
+  width: 100%;
+  height: 58px;
+  margin-bottom: 22px;
+
+  color: var(--primary-color);
+}
+
+.form-input {
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 42px;
+
+  width: 100%;
+  height: 40px;
+  outline: none;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-input:focus,
+.form-input:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.form-input:focus ~ .input-icon,
+.form-input:hover ~ .input-icon {
+  color: var(--accent-color);
+}
+
+.form-input:focus + .form-label,
+.form-input:hover + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-40px);
+  color: var(--accent-color);
+}
+
+.form-input:not(:focus):not(:placeholder-shown):invalid {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.form-input:not(:focus):not(:placeholder-shown):valid {
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+.form-input:not(:focus):not(:placeholder-shown):invalid ~ .error {
+  display: block;
+}
+
+.error {
+  display: none;
+  color: #ff0000;
+  font-size: 12px;
+}
+
+.form-label {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  position: absolute;
+  bottom: 11px;
+  left: 42px;
+
+  font-size: 12px;
+  line-height: 1, 17;
+  letter-spacing: 0.01em;
+
+  color: var(--text-color);
+}
+
+.input-icon {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+
+  fill: currentColor;
+}
+
+.sign-btn {
+  display: block;
+  margin-left: auto;
 
   color: var(--primary-color);
 }
