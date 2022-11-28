@@ -703,6 +703,13 @@ img {
   color: rgba(157, 164, 189, 0.4);
 }
 
+.input-field:focus::placeholder,
+.input-textarea:focus::placeholder,
+.input-field:hover::placeholder,
+.input-textarea:hover::placeholder {
+  color: var(--white-color);
+}
+
 .contacts {
   width: calc(50% - 15px);
   padding-left: 100px;
