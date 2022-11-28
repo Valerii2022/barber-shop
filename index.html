@@ -423,6 +423,7 @@
         </button>
         <p class="modal-form-title">Add information about yourself</p>
         <form class="backdrop-sign-form">
+          <!-- name input -->
           <div class="input-wrap">
             <input
               type="text"
@@ -439,6 +440,7 @@
             </svg>
             <p class="error">Minimum three characters</p>
           </div>
+          <!-- phone input -->
           <div class="input-wrap">
             <input
               type="tel"
@@ -456,6 +458,7 @@
             </svg>
             <p class="error">Phone number format +38 (096) 111-11-11</p>
           </div>
+          <!-- email input -->
           <div class="input-wrap">
             <input
               type="email"
@@ -471,6 +474,7 @@
             </svg>
             <p class="error">Email format some@some</p>
           </div>
+          <!-- textarea -->
           <div class="input-wrap">
             <label class="textarea-label" for="textarea">Feedback</label>
             <textarea
@@ -481,43 +485,57 @@
             ></textarea>
             <label for="textarea"></label>
           </div>
+          <!-- radio 1 -->
           <div class="radio-btn-wrapper">
             <div class="radio-wrap">
               <input class="radio-btn hidden" type="radio" name="radio-btn" id="small" />
-              <label class="radio-label" for="small">small</label>
-              <svg class="radio-icon" width="18" height="18">
-                <use href="./images/icons-main.svg#icon-switch"></use>
-              </svg>
+              <label class="radio-label" for="small">
+                <span>small</span>
+                <svg class="radio-icon" width="18" height="18">
+                  <use href="./images/icons-main.svg#icon-switch"></use>
+                </svg>
+              </label>
             </div>
             <div class="radio-wrap">
               <input class="radio-btn hidden" type="radio" name="radio-btn" id="normal" />
-              <label class="radio-label" for="normal">normal</label>
-              <svg class="radio-icon" width="18" height="18">
-                <use href="./images/icons-main.svg#icon-switch"></use>
-              </svg>
+              <label class="radio-label" for="normal">
+                <span>normal</span>
+                <svg class="radio-icon" width="18" height="18">
+                  <use href="./images/icons-main.svg#icon-switch"></use>
+                </svg>
+              </label>
             </div>
             <div class="radio-wrap">
               <input class="radio-btn hidden" type="radio" name="radio-btn" id="big" />
-              <label class="radio-label" for="big">big</label>
-              <svg class="radio-icon" width="18" height="18">
-                <use href="./images/icons-main.svg#icon-switch"></use>
-              </svg>
+              <label class="radio-label" for="big">
+                <span>big</span>
+                <svg class="radio-icon" width="18" height="18">
+                  <use href="./images/icons-main.svg#icon-switch"></use>
+                </svg>
+              </label>
             </div>
           </div>
+          <!-- radio 2 -->
           <div class="radio-btn-wrapper column">
-            <div class="radio-wrap">
+            <div class="radio-wrap2">
               <input class="radio-btn2 hidden" type="radio" name="radio-btn2" id="small2" />
               <label class="radio-label2" for="small2">small</label>
             </div>
-            <div class="radio-wrap">
+            <div class="radio-wrap2">
               <input class="radio-btn2 hidden" type="radio" name="radio-btn2" id="normal2" />
               <label class="radio-label2" for="normal2">normal</label>
             </div>
-            <div class="radio-wrap">
+            <div class="radio-wrap2">
               <input class="radio-btn2 hidden" type="radio" name="radio-btn2" id="big2" />
               <label class="radio-label2" for="big2">big</label>
             </div>
           </div>
+          <!-- checkbox -->
+          <div class="check-wrap">
+            <input class="check-input hidden" type="checkbox" name="checkbox" id="checkbox" />
+            <label class="check-label" for="checkbox">I`m agree with policy</label>
+          </div>
+          <!-- submit -->
           <button class="button sign-btn" type="submit">send</button>
         </form>
       </div>
