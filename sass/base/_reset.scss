@@ -1,0 +1,28 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+   margin: 0;
+   padding: 0;
+}
+
+.link {
+   font-weight: 600;
+   line-height: 1.3333;
+   letter-spacing: 0.1em;
+   text-decoration: none;
+
+   color: var(--white-color);
+}
+
+.list {
+   list-style: none;
+}
+
+img {
+   display: block;
+}
