@@ -4,13 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <title>FS73</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,32 +11,40 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <!--header-->
     <header class="header">
-      <div class="container header-wrapper">
-        <div class="menu">
-          <a href="#" class="logo">
-            <svg class="logo" width="69" height="55">
+      <div class="container header__wrapper">
+        <div class="header__menu">
+          <a href="#" class="logo header__logo">
+            <svg class="logo__icon" width="69" height="55">
               <use href="./images/icons-main.svg#icon-Logo"></use>
             </svg>
           </a>
-          <nav class="header-nav">
-            <ul class="header-list list">
-              <li class="item"><a href="#about" class="link">About</a></li>
-              <li class="item"><a href="#prices" class="link">Services and prices</a></li>
-              <li class="item"><a href="#barbers" class="link">Barbers</a></li>
-              <li class="item"><a href="#contacts" class="link">Contacts</a></li>
+          <nav class="header__nav navigation">
+            <ul class="nav-list list">
+              <li class="nav-list__item"><a href="#about" class="nav-list__link link">About</a></li>
+              <li class="nav-list__item">
+                <a href="#prices" class="nav-list__link link">Services and prices</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#barbers" class="nav-list__link link">Barbers</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#contacts" class="nav-list__link link">Contacts</a>
+              </li>
             </ul>
           </nav>
         </div>
-        <div class="header-booking">
-          <a href="tel:+380441111111" class="header-contacts link">+38 044 111 11 11</a>
-          <button type="button" class="header-btn button" data-modal-open>Online-booking</button>
+        <div class="contacts">
+          <a href="tel:+380441111111" class="contacts__tel header__contacts link"
+            >+38 044 111 11 11</a
+          >
+          <button type="button" class="contacts__btn button" data-modal-open>Online-booking</button>
         </div>
       </div>
     </header>
@@ -51,50 +52,54 @@
     <main>
       <!--section hero-->
       <section class="hero">
-        <div class="container hero-wrapper">
-          <div class="hero-list-wrapper">
-            <ul class="hero-list list">
-              <li class="item">
-                <a href="#" target="_blank" rel="noopener noreferree" class="link">Instagram</a>
+        <div class="container hero__wrapper">
+          <div class="hero__list-wrap">
+            <ul class="social-list list">
+              <li class="social-list__item">
+                <a href="#" target="_blank" rel="noopener noreferree" class="social-list__link link"
+                  >Instagram</a
+                >
               </li>
-              <li class="item">
-                <a href="#" target="_blank" rel="noopener noreferree" class="link">Youtube</a>
+              <li class="social-list__item">
+                <a href="#" target="_blank" rel="noopener noreferree" class="social-list__link link"
+                  >Youtube</a
+                >
               </li>
             </ul>
           </div>
-          <div class="hero-main">
-            <p class="hero-uptitle uptitle">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title">BarberShop</h1>
-            <p class="hero-subtitle">
+          <div class="hero__main">
+            <p class="hero__uptitle uptitle">A hair salon for men in Kyiv</p>
+            <h1 class="hero__title">BarberShop</h1>
+            <p class="hero__subtitle">
               We are experts in trendy men`s haircuts. We work quickly, carefully and with style.
             </p>
           </div>
         </div>
       </section>
       <!--about section-->
-      <section class="about section" id="about">
-        <div class="container about-wrapper">
-          <ul class="about-list list">
-            <li class="item">
+      <section class="about" id="about">
+        <div class="container about__wrapper">
+          <ul class="about__list list">
+            <li class="about__img">
               <img src="./images/about-01.jpg" alt="" width="270" height="445" />
             </li>
-            <li class="item">
+            <li class="about__img">
               <img src="./images/about-02.jpg" alt="" width="270" height="445" />
             </li>
           </ul>
-          <div class="about-main">
-            <p class="uptitle">About</p>
-            <h2 class="title">Best Barbershop in your city</h2>
-            <p class="subtitle">
+          <div class="about__main">
+            <p class="about__uptitle uptitle">About</p>
+            <h2 class="about__title title">Best Barbershop in your city</h2>
+            <p class="about__subtitle subtitle">
               If you want to add more confidence to your image, you should definitely visit us.
             </p>
-            <p class="text">
+            <p class="about__text text">
               We are a team that never stops at what has been achieved and are thirsty for changes.
               And when you fall into the hands of our master, you will never be the same again. We
               are a team that is always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="button about-btn" data-modal-open2>ONLINE-BOOKING</button>
+            <button type="button" class="about__btn button" data-modal-open2>ONLINE-BOOKING</button>
           </div>
         </div>
       </section>

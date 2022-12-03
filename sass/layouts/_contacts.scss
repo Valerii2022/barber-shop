@@ -1,0 +1,14 @@
+.contacts {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+.contacts__btn {
+   margin-right: 20px;
+}
+
+.contacts__tel:hover,
+.contacts__tel:focus {
+   color: var(--accent-color);
+}
