@@ -1,0 +1,42 @@
+.prices {
+   background-color: var(--bg-image-color-2);
+   background-image: url(../images/services.png);
+   max-width: 1600px;
+   height: 692px;
+   padding-top: 116px;
+   padding-bottom: 124px;
+   @extend %margin-auto;
+
+   &__uptitle {
+      color: var(--uptitle-secondary-color);
+      margin-bottom: 20px;
+   }
+
+   &__title {
+      margin-bottom: 44px;
+      color: var(--white-color);
+   }
+
+   &__list-wrap {
+      @include flex(flex, space-between, null);
+      gap: 30px;
+      margin-bottom: 44px;
+   }
+
+   &__prices-list {
+      width: calc((100% - 30px) / 2);
+   }
+
+   &__prices-list:first-child {
+      background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+   }
+
+   &__prices-list:last-child {
+      background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+   }
+
+   &__btn {
+      display: block;
+      @extend %margin-auto;
+   }
+}

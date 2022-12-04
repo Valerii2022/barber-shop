@@ -1,0 +1,15 @@
+.booking-block {
+   background-color: var(--bg-image-color);
+   background-image: url(../images/contacts.png);
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size: calc(50% - 15px) 100%;
+   max-width: 1600px;
+   @extend %margin-auto;
+   padding: 130px 0 120px 0;
+
+   &__wrapper {
+      display: flex;
+      gap: 30px;
+   }
+}

@@ -1,0 +1,31 @@
+.prices-list {
+   padding: 30px 20px;
+   &__item {
+      @include flex(flex, null, baseline);
+   }
+
+   &__item:not(:last-child) {
+      margin-bottom: 20px;
+   }
+
+   &__item:before {
+      content: "";
+      margin-right: 12px;
+      margin-left: 12px;
+      height: 1px;
+      width: 50px;
+      flex-grow: 1;
+      display: block;
+      background-color: rgba(157, 164, 189, 0.12);
+   }
+
+   &__text {
+      @include font(null, 18px, 1.6667, 0.02em);
+
+      color: var(--color-on-dark-bg);
+   }
+
+   &__text:first-child {
+      order: -1;
+   }
+}
