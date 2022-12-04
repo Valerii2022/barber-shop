@@ -1,7 +1,5 @@
 .text {
-   font-size: 14px;
-   line-height: 1.8571;
-   letter-spacing: 0.02em;
+   @include font(null, 14px, 1.8571, 0.02em);
 
    color: var(--text-color);
 }

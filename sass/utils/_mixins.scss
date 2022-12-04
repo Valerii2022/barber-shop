@@ -6,7 +6,7 @@
 }
 
 @mixin transition($property) {
-   transition: $property 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @mixin flex($type, $jc, $ai) {

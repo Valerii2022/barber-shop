@@ -1,18 +1,16 @@
 .uptitle {
-   font-weight: 600;
-   font-size: 11px;
-   line-height: 1.3636;
+   @include font(600, 11px, 1.3636, null);
    text-transform: uppercase;
-}
 
-.uptitle::before {
-   content: "";
-   display: inline-block;
-   width: 60px;
-   height: 1px;
-   background-color: currentColor;
+   &::before {
+      content: "";
+      display: inline-block;
+      width: 60px;
+      height: 1px;
+      background-color: currentColor;
 
-   margin-right: 20px;
+      margin-right: 20px;
 
-   vertical-align: middle;
+      vertical-align: middle;
+   }
 }

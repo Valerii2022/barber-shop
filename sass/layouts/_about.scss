@@ -1,38 +1,38 @@
 .about {
    padding: 120px 0;
-}
 
-.about__wrapper {
-   display: flex;
-   gap: 30px;
-}
+   &__wrapper {
+      display: flex;
+      gap: 30px;
+   }
 
-.about__list {
-   display: flex;
-   gap: 30px;
-}
+   &__list {
+      display: flex;
+      gap: 30px;
+   }
 
-.about__main {
-   padding-right: 100px;
-}
+   &__main {
+      padding-right: 100px;
+   }
 
-.about__uptitle {
-   margin-bottom: 20px;
-   color: var(--primary-color);
-}
+   &__uptitle {
+      margin-bottom: 20px;
+      color: var(--primary-color);
+   }
 
-.about__title {
-   margin-bottom: 20px;
-}
+   &__title {
+      margin-bottom: 20px;
+   }
 
-.about__subtitle {
-   margin-bottom: 20px;
-}
+   &__subtitle {
+      margin-bottom: 20px;
+   }
 
-.about__text {
-   margin-bottom: 42px;
-}
+   &__text {
+      margin-bottom: 42px;
+   }
 
-.about__btn {
-   color: var(--primary-color);
+   &__btn {
+      color: var(--primary-color);
+   }
 }
