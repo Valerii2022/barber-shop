@@ -1,0 +1,48 @@
+.address {
+   max-width: 270px;
+
+   &__link {
+      @include transition(color);
+
+      display: flex;
+      align-items: center;
+
+      font-style: normal;
+      @include font(null, 18px, 1.6667, 0.02em);
+      color: var(--color-on-dark-bg);
+   }
+
+   &__link:not(:last-child) {
+      margin-bottom: 20px;
+   }
+
+   &__link:hover,
+   &__link:focus {
+      color: var(--accent-color);
+   }
+
+   &__social-network {
+      margin-right: 16px;
+      stroke: currentColor;
+   }
+
+   &__map-link {
+      font-weight: 700;
+   }
+
+   &__tel-link,
+   &__mail-link {
+      font-weight: 400;
+   }
+
+   &__mail-link {
+      text-decoration-line: underline;
+   }
+}
+
+.address__social-network {
+   .address__map-link & {
+      margin-top: 5px;
+      align-self: start;
+   }
+}

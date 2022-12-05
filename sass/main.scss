@@ -1,6 +1,6 @@
 @import "./base/normalize";
-@import "./base/reset";
 @import "./utils/mixins";
+@import "./base/reset";
 @import "./utils/placeholders";
 @import "./utils/variables";
 @import "./base/common";
@@ -27,3 +27,11 @@
 @import "./layouts/booking-block";
 @import "./layouts/booking-form";
 @import "./layouts/contacts-form";
+@import "./layouts/form";
+@import "./layouts/address";
+@import "./layouts/footer";
+@import "./layouts/backdrop-origin";
+@import "./layouts/backdrop-form";
+@import "./layouts/form-in-backdrop";
+@import "./layouts/radio-off-style";
+@import "./layouts/radio-name";

@@ -353,130 +353,145 @@
       </section>
       <!-- Online-booking and contacts section -->
       <div class="booking-block">
-        <div class="container booking-form__wrapper">
+        <div class="container booking-block__wrapper">
           <!-- Online-booking section -->
           <section class="booking-form">
-            <h2 class="title white">Online-booking</h2>
-            <form class="form" action="#">
-              <div class="input-field-wrap">
-                <label class="input-field-label">
+            <h2 class="booking-form__title title">Online-booking</h2>
+            <form class="booking-form__form form" action="#">
+              <div class="form__field-wrap">
+                <label class="form__label">
                   <input
                     type="text"
                     name="name"
                     placeholder="name*"
-                    class="input-field"
+                    class="form__input"
                     autocomplete="off"
                   />
                 </label>
-                <label class="input-field-label">
+                <label class="form__label">
                   <input
                     type="tel"
                     name="phone"
                     placeholder="phone*"
-                    class="input-field"
+                    class="form__input"
                     autocomplete="off"
                   />
                 </label>
               </div>
-              <label class="input-field-label">
-                <textarea name="message" placeholder="message*" class="input-textarea"></textarea>
+              <label class="form__label">
+                <textarea name="message" placeholder="message*" class="form__textarea"></textarea>
               </label>
-              <button type="submit" class="button">Send</button>
+              <button type="submit" class="form__btn button">Send</button>
             </form>
           </section>
           <!-- contacts section -->
           <section class="contacts-form" id="contacts">
-            <h2 class="title white">Contacts</h2>
-            <address class="address">
+            <h2 class="contacts-form__title title">Contacts</h2>
+            <address class="contacts-form__address address">
               <a
                 href="https://goo.gl/maps/9DbykDJxxZfGmVuY7"
                 target="_blank"
                 rel="noopener noreferree"
-                class="map-link link"
+                class="address__map-link address__link link"
               >
-                <svg class="social-network" width="24" height="24">
+                <svg class="address__social-network" width="24" height="24">
                   <use href="./images/icons-main.svg#icon-map-pin"></use>
                 </svg>
-                st. Vasilkovaya, 7A Kiev, 08132</a
+                st. Vasilkovaya, 7A <br />
+                Kiev, 08132</a
               >
-              <a href="tel:+380441111111" class="tel-link link">
-                <svg class="social-network" width="24" height="24">
+              <a href="tel:+380441111111" class="address__tel-link address__link link">
+                <svg class="address__social-network" width="24" height="24">
                   <use href="./images/icons-main.svg#icon-phone"></use>
                 </svg>
                 +38 044 111 11 11</a
               >
-              <a href="mailto:barbershop@email.com" class="mail-link link">
-                <svg class="social-network" width="24" height="24">
+              <a href="mailto:barbershop@email.com" class="address__mail-link address__link link">
+                <svg class="address__social-network" width="24" height="24">
                   <use href="./images/icons-main.svg#icon-mail"></use>
                 </svg>
                 barbershop@email.com</a
               >
             </address>
-            <p class="uptitle white">Working hours</p>
-            <p class="subtitle-contacts subtitle">Every day from 9:00 to 22:00</p>
+            <p class="contacts-form__uptitle uptitle">Working hours</p>
+            <p class="contacts-form__subtitle subtitle">Every day from 9:00 to 22:00</p>
           </section>
         </div>
       </div>
     </main>
     <!--footer-->
     <footer class="footer">
-      <div class="container footer-wrapper">
-        <p class="copyright">&#169; Copyright 2020</p>
-        <ul class="footer-list">
-          <li class="item">
-            <a href="#" target="_blank" rel="noopener noreferree" class="link">Instagram</a>
+      <div class="container footer__wrapper">
+        <p class="footer__copyright">&#169; Copyright 2020</p>
+        <ul class="footer__list social-list list">
+          <li class="social-list__item">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferree"
+              class="footer-link social-list__link link"
+              >Instagram</a
+            >
           </li>
-          <li class="item">
-            <a href="#" target="_blank" rel="noopener noreferree" class="link">Youtube</a>
+          <li class="social-list__item">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferree"
+              class="footer-link social-list__link link"
+              >Youtube</a
+            >
           </li>
         </ul>
       </div>
     </footer>
     <!-- backdrop -->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <div class="btn-wrap dark">
-          <button class="modal-btn transparent" type="button">cita previa</button>
-          <button class="modal-btn accent-bg" type="button" data-modal-close>cita previa</button>
+    <div class="backdrop-origin is-hidden" data-modal>
+      <div class="backdrop-origin__modal">
+        <div class="backdrop-origin__btn-wrap dark">
+          <button class="backdrop-origin__btn transparent" type="button">cita previa</button>
+          <button class="backdrop-origin__btn accent-bg" type="button" data-modal-close>
+            cita previa
+          </button>
         </div>
-        <div class="btn-wrap light">
-          <button class="modal-btn transparent" type="button">cita previa</button>
-          <button class="modal-btn accent-bg" type="button">cita previa</button>
+        <div class="backdrop-origin__btn-wrap light">
+          <button class="backdrop-origin__btn transparent" type="button">cita previa</button>
+          <button class="backdrop-origin__btn accent-bg" type="button">cita previa</button>
         </div>
       </div>
     </div>
     <!-- form backdrop-->
-    <div class="backdrop-form is-hidden2" data-modal2>
-      <div class="modal-form">
-        <button class="form-close-btn" data-modal-close2>
-          <svg class="form-close-icon" width="18" height="18">
+    <div class="backdrop-with-form is-hidden2" data-modal2>
+      <div class="backdrop-with-form__modal">
+        <button class="backdrop-with-form__close-btn" data-modal-close2>
+          <svg class="backdrop-form__close-icon" width="18" height="18">
             <use href="./images/icons-main.svg#icon-close-form-modal"></use>
           </svg>
         </button>
-        <p class="modal-form-title">Add information about yourself</p>
-        <form class="backdrop-sign-form">
+        <p class="backdrop-with-form__title">Add information about yourself</p>
+        <form class="backdrop-form">
           <!-- name input -->
-          <div class="input-wrap">
+          <div class="backdrop-form__input-wrap">
             <input
               type="text"
-              class="form-input"
+              class="backdrop-form__input"
               name="user-name"
               id="user-name"
               placeholder=" "
               required
               minlength="3"
             />
-            <label class="form-label" for="user-name">Name</label>
-            <svg class="input-icon" width="18" height="18">
+            <label class="backdrop-form__label" for="user-name">Name</label>
+            <svg class="backdrop-form__input-icon" width="18" height="18">
               <use href="./images/icons-main.svg#icon-person"></use>
             </svg>
             <p class="error">Minimum three characters</p>
           </div>
           <!-- phone input -->
-          <div class="input-wrap">
+          <div class="backdrop-form__input-wrap">
             <input
               type="tel"
-              class="form-input"
+              class="backdrop-form__input"
               name="user-tel"
               id="user-tel"
               placeholder=" "
@@ -484,91 +499,105 @@
               pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
               title="+38 (096) 111-11-11"
             />
-            <label class="form-label" for="user-tel">Phone number</label>
-            <svg class="input-icon" width="18" height="18">
+            <label class="backdrop-form__label" for="user-tel">Phone number</label>
+            <svg class="backdrop-form__input-icon" width="18" height="18">
               <use href="./images/icons-main.svg#icon-phone-form"></use>
             </svg>
             <p class="error">Phone number format +38 (096) 111-11-11</p>
           </div>
           <!-- email input -->
-          <div class="input-wrap">
+          <div class="backdrop-form__input-wrap">
             <input
               type="email"
-              class="form-input"
+              class="backdrop-form__input"
               name="user-email"
               id="user-email"
               placeholder=" "
               required
             />
-            <label class="form-label" for="user-email">Email address</label>
-            <svg class="input-icon" width="18" height="18">
+            <label class="backdrop-form__label" for="user-email">Email address</label>
+            <svg class="backdrop-form__input-icon" width="18" height="18">
               <use href="./images/icons-main.svg#icon-email"></use>
             </svg>
             <p class="error">Email format some@some</p>
           </div>
           <!-- textarea -->
-          <div class="input-wrap">
-            <label class="textarea-label" for="textarea">Feedback</label>
+          <div class="backdrop-form__input-wrap">
+            <label class="backdrop-form__textarea-label" for="textarea">Feedback</label>
             <textarea
-              class="textarea"
+              class="backdrop-form__textarea"
               name="textarea"
               id="textarea"
               placeholder="add feedback"
             ></textarea>
-            <label for="textarea"></label>
           </div>
           <!-- radio 1 -->
-          <div class="radio-btn-wrapper">
-            <div class="radio-wrap">
-              <input class="radio-btn hidden" type="radio" name="radio-btn" id="small" />
-              <label class="radio-label" for="small">
+          <div class="backdrop-form__radio-wrap radio-off-style">
+            <div class="radio-off-style__wrapper">
+              <input
+                class="radio-off-style__input hidden"
+                type="radio"
+                name="radio-btn"
+                id="small"
+              />
+              <label class="radio-off-style__label" for="small">
                 <span>small</span>
-                <svg class="radio-icon" width="18" height="18">
+                <svg class="radio-off-style__icon" width="18" height="18">
                   <use href="./images/icons-main.svg#icon-switch"></use>
                 </svg>
               </label>
             </div>
-            <div class="radio-wrap">
-              <input class="radio-btn hidden" type="radio" name="radio-btn" id="normal" />
-              <label class="radio-label" for="normal">
+            <div class="radio-off-style__wrapper">
+              <input
+                class="radio-off-style__input hidden"
+                type="radio"
+                name="radio-btn"
+                id="normal"
+              />
+              <label class="radio-off-style__label" for="normal">
                 <span>normal</span>
-                <svg class="radio-icon" width="18" height="18">
+                <svg class="radio-off-style__icon" width="18" height="18">
                   <use href="./images/icons-main.svg#icon-switch"></use>
                 </svg>
               </label>
             </div>
-            <div class="radio-wrap">
-              <input class="radio-btn hidden" type="radio" name="radio-btn" id="big" />
-              <label class="radio-label" for="big">
+            <div class="radio-off-style__wrapper">
+              <input class="radio-off-style__input hidden" type="radio" name="radio-btn" id="big" />
+              <label class="radio-off-style__label" for="big">
                 <span>big</span>
-                <svg class="radio-icon" width="18" height="18">
+                <svg class="radio-off-style__icon" width="18" height="18">
                   <use href="./images/icons-main.svg#icon-switch"></use>
                 </svg>
               </label>
             </div>
           </div>
           <!-- radio 2 -->
-          <div class="radio-btn-wrapper column">
-            <div class="radio-wrap2">
-              <input class="radio-btn2 hidden" type="radio" name="radio-btn2" id="small2" />
-              <label class="radio-label2" for="small2">small</label>
+          <div class="backdrop-form__radio-wrap radio-name column">
+            <div class="radio-name__wrap">
+              <input class="radio-name__input hidden" type="radio" name="radio-btn2" id="small2" />
+              <label class="radio-name__label" for="small2">small</label>
             </div>
-            <div class="radio-wrap2">
-              <input class="radio-btn2 hidden" type="radio" name="radio-btn2" id="normal2" />
-              <label class="radio-label2" for="normal2">normal</label>
+            <div class="radio-name__wrap">
+              <input class="radio-name__input hidden" type="radio" name="radio-btn2" id="normal2" />
+              <label class="radio-name__label" for="normal2">normal</label>
             </div>
-            <div class="radio-wrap2">
-              <input class="radio-btn2 hidden" type="radio" name="radio-btn2" id="big2" />
-              <label class="radio-label2" for="big2">big</label>
+            <div class="radio-name__wrap">
+              <input class="radio-name__input hidden" type="radio" name="radio-btn2" id="big2" />
+              <label class="radio-name__label" for="big2">big</label>
             </div>
           </div>
           <!-- checkbox -->
-          <div class="check-wrap">
-            <input class="check-input hidden" type="checkbox" name="checkbox" id="checkbox" />
-            <label class="check-label" for="checkbox">I`m agree with policy</label>
+          <div class="backdrop-form__check-wrap">
+            <input
+              class="backdrop-form__check-input hidden"
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+            />
+            <label class="backdrop-form__check-label" for="checkbox">I`m agree with policy</label>
           </div>
           <!-- submit -->
-          <button class="button sign-btn" type="submit">send</button>
+          <button class="button backdrop-form__sign-btn" type="submit">send</button>
         </form>
       </div>
     </div>

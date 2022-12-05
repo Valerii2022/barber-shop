@@ -1,0 +1,22 @@
+.contacts-form {
+   width: calc(50% - 15px);
+   padding-left: 100px;
+
+   &__title {
+      margin-bottom: 40px;
+      color: var(--white-color);
+   }
+
+   &__address {
+      margin-bottom: 70px;
+   }
+
+   &__uptitle {
+      margin-bottom: 20px;
+      color: var(--white-color);
+   }
+
+   &__subtitle {
+      color: var(--color-on-dark-bg);
+   }
+}

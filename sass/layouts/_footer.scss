@@ -1,0 +1,17 @@
+.footer {
+   padding: 56px 0;
+
+   &__wrapper {
+      @include flex(flex, space-between, null);
+   }
+   &__list {
+      display: flex;
+      transform: none;
+      transform-origin: none;
+   }
+
+   &__copyright {
+      @include font(600, 11px, 1.3636, 0.2em);
+      color: var(--color-on-dark-bg);
+   }
+}

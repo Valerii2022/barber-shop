@@ -2,7 +2,3 @@
    font-family: "Raleway";
    @include font(200, 42px, 1.1667, 0.05em);
 }
-
-.white {
-   color: var(--white-color);
-}
