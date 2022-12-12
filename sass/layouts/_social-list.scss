@@ -1,10 +1,14 @@
 .social-list {
-   @include flex(flex, null, center);
-   gap: 40px;
+   @include tablet {
+      transform: rotate(-90deg) translateY(100%);
+      transform-origin: bottom left;
+      @include flex(flex, null, center);
+      gap: 40px;
+   }
 
-   @include tablet{
-   transform: rotate(-90deg) translateY(100%);
-   transform-origin: bottom left;
+   @media screen and (max-width: 767px) {
+      position: relative;
+      padding-left: 100px;
    }
 
    &::before {
@@ -13,6 +17,12 @@
       width: 60px;
       height: 1px;
       background: var(--uptitle-secondary-color);
+
+      @media screen and (max-width: 767px) {
+         position: absolute;
+         top: 10px;
+         left: 0;
+      }
    }
 
    &__link {
@@ -20,6 +30,12 @@
 
       @include font(null, 11px, 1.3636, 0.2em);
       color: var(--primary-color);
+
+      @media screen and (max-width: 767px) {
+         font-size: 14px;
+         margin-bottom: 24px;
+         display: inline-block;
+      }
    }
 
    &__link:hover,

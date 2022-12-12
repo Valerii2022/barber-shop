@@ -1,12 +1,30 @@
 .nav-list {
-   display: flex;
+   @include tablet {
+      display: flex;
+   }
 
    &__item:not(:last-child) {
-      margin-right: 30px;
+      @media screen and (max-width: 767px) {
+         margin-bottom: 24px;
+      }
+
+      @include tablet {
+         margin-right: 16px;
+      }
+
+      @include desktop {
+         margin-right: 30px;
+      }
    }
 
    &__link {
       @include transition(color);
+
+      @media screen and (max-width: 767px) {
+         color: var(--primary-color);
+         font-size: 18px;
+         line-height: 1.39;
+      }
    }
 
    &__link:hover,

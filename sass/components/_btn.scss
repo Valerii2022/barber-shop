@@ -4,7 +4,7 @@
    cursor: pointer;
    border: 1px solid var(--accent-color);
    border-radius: 25px;
-   width: 160px;
+   width: 194px;
    padding-right: auto;
    padding-left: auto;
    padding-top: 10px;
@@ -17,6 +17,10 @@
    background-color: transparent;
 
    border: 2px solid var(--accent-color);
+
+   @include tablet {
+      width: 160px;
+   }
 
    &:hover {
       color: var(--accent-color);

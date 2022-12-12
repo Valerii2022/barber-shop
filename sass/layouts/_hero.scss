@@ -1,6 +1,10 @@
 .hero {
+   @include tablet {
+      padding-right: 39px;
+      padding-left: 39px;
+   }
 
-   @include tablet{
+   @include desktop {
       padding-right: 15px;
       padding-left: 15px;
    }
@@ -19,22 +23,25 @@
       max-width: 1200px;
    }
    &__wrapper {
-      @include tablet{
+      @include tablet {
          display: flex;
          gap: 30px;
       }
-
-   
    }
 
    &__list-wrap {
-      width: 70px;
+      width: 90px;
       @include flex(flex, null, flex-end);
       padding-bottom: 40px;
-      padding-left: 27px;
+      padding-left: 37px;
 
-      @media screen and (max-width:767px){
+      @media screen and (max-width: 767px) {
          display: none;
+      }
+
+      @include desktop {
+         width: 70px;
+         padding-left: 27px;
       }
    }
 
@@ -42,13 +49,13 @@
       background-color: var(--bg-image-color);
       background-repeat: no-repeat;
       background-size: cover;
-      background-position:  0 0 ;
+      background-position: 0 0;
       padding-top: 208px;
       padding-left: 31px;
       padding-bottom: 209px;
       width: 100%;
       background-image: var(--gradient), url(../../images/hero1-mob.jpg);
-      @include retina{
+      @include retina {
          background-image: var(--gradient), url(../../images/hero1-mob@2x.jpg);
       }
 
@@ -57,7 +64,7 @@
          padding-left: 120px;
          padding-bottom: 237px;
          background-image: var(--gradient), url(../../images/hero1-tab.jpg);
-         @include retina{
+         @include retina {
             background-image: var(--gradient), url(../../images/hero1-tab@2x.jpg);
          }
       }
@@ -66,7 +73,7 @@
          padding-left: 100px;
          padding-bottom: 208px;
          background-image: var(--gradient), url(../../images/hero1.jpg);
-         @include retina{
+         @include retina {
             background-image: var(--gradient), url(../../images/hero1@2x.jpg);
          }
       }
@@ -85,7 +92,7 @@
 
       color: var(--white-color);
 
-      @include desktop{
+      @include desktop {
          font-size: 72px;
          line-height: 1.1806;
       }
@@ -98,16 +105,14 @@
 
       color: var(--color-on-dark-bg);
 
-      @include tablet{
+      @include tablet {
          max-width: 360px;
          font-size: 18px;
          line-height: 1.6667;
       }
 
       @include desktop {
-         max-width: 357px;
+         max-width: 380px;
       }
    }
-
-   
 }

@@ -1,5 +1,10 @@
 .subtitle {
-   @include font(null, 18px, 1.6667, 0.02em);
+   @include font(null, 16px, 1.625, 0.02em);
 
    color: var(--text-color);
+
+   @include tablet {
+      font-size: 18px;
+      line-height: 1.6667;
+   }
 }

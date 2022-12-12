@@ -5,69 +5,110 @@
    left: 0;
 
    &__wrapper {
-      @include flex(flex, space-between, center);
-      padding-top: 40px;
-      padding-right: 31px;
+      // @include flex(flex, space-between, center);
+      display: flex;
+      justify-content: space-between;
 
-      @include desktop{
+      padding-top: 40px;
+
+      @media screen and (max-width: 767px) {
+         padding-right: 31px;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+         align-items: flex-start;
+      }
+
+      @include desktop {
          padding-top: 32px;
          padding-right: 20px;
+         align-items: center;
       }
    }
 
    &__menu {
       display: flex;
       align-items: center;
+
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+         padding-left: 11px;
+      }
    }
 
    &__logo {
-      margin-right: 130px;
+      color: var(--primary-color);
 
-      @media screen and (max-width: 767px){
+      @media screen and (max-width: 767px) {
          color: var(--white-color);
       }
+
+      @include tablet {
+         margin-right: 60px;
+      }
+
+      @include desktop {
+         margin-right: 130px;
+      }
    }
 
-   &__nav{
-      @media screen and (max-width: 767px){
+   &__nav {
+      @media screen and (max-width: 767px) {
          display: none;
       }
    }
 
-   &__contacts-wrap{
-      @media screen and (max-width: 767px){
+   &__contacts-wrap {
+      @media screen and (max-width: 767px) {
          display: none;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+         display: flex;
+         flex-direction: column-reverse;
+         padding-top: 10px;
+         padding-right: 20px;
       }
    }
 
    &__contacts {
-      margin-right: 40px;
-
       @include transition(color);
       text-transform: uppercase;
 
-      @media screen and (max-width: 767px){
+      @media screen and (max-width: 767px) {
+         display: none;
+      }
+
+      @media screen and (max-width: 1199px) {
+         align-self: end;
+      }
+
+      @include desktop {
+         margin-right: 40px;
+      }
+   }
+
+   &__btn {
+      @media screen and (max-width: 767px) {
          display: none;
       }
    }
 
-   &__btn{
-      @media screen and (max-width: 767px){
-         display: none;
-      }
-   }
-
-   &__mobile-btn{
+   &__mobile-btn {
+      @include transition(color);
       color: var(--white-color);
       border: none;
       background-color: transparent;
 
-      @include tablet{
+      @include tablet {
          display: none;
+      }
+
+      &:hover {
+         color: var(--accent-color);
       }
    }
 
-   &__burger-icon{
+   &__burger-icon {
       fill: currentColor;
    }
 }
