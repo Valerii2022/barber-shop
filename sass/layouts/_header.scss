@@ -6,9 +6,13 @@
 
    &__wrapper {
       @include flex(flex, space-between, center);
-      padding-top: 32px;
-      padding-bottom: 32px;
-      padding-right: 20px;
+      padding-top: 40px;
+      padding-right: 31px;
+
+      @include desktop{
+         padding-top: 32px;
+         padding-right: 20px;
+      }
    }
 
    &__menu {
@@ -18,6 +22,10 @@
 
    &__logo {
       margin-right: 130px;
+
+      @media screen and (max-width: 767px){
+         color: var(--white-color);
+      }
    }
 
    &__nav{

@@ -414,9 +414,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-right: 20px;
+  padding-top: 40px;
+  padding-right: 31px;
+}
+@media screen and (min-width: 1200px) {
+  .header__wrapper {
+    padding-top: 32px;
+    padding-right: 20px;
+  }
 }
 .header__menu {
   display: -webkit-box;
@@ -428,6 +433,11 @@ body {
 }
 .header__logo {
   margin-right: 130px;
+}
+@media screen and (max-width: 767px) {
+  .header__logo {
+    color: var(--white-color);
+  }
 }
 @media screen and (max-width: 767px) {
   .header__nav {
@@ -503,8 +513,26 @@ body {
   color: var(--accent-color);
 }
 
+.logo__icon {
+  fill: currentColor;
+}
+
 .mobile-menu {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  padding-top: 118px;
+  padding-left: 40px;
+  background-color: var(--white-color);
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
@@ -617,7 +645,7 @@ body {
   }
 }
 .hero__subtitle {
-  width: 370px;
+  max-width: 336px;
   font-size: 16px;
   line-height: 1.625;
   letter-spacing: 0.02em;
@@ -625,17 +653,18 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero__subtitle {
-    max-width: 336px;
+    max-width: 360px;
     font-size: 18px;
     line-height: 1.6667;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero__subtitle {
+    max-width: 357px;
+  }
+}
 
 .social-list {
-  -webkit-transform: rotate(-90deg) translateY(100%);
-          transform: rotate(-90deg) translateY(100%);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -643,6 +672,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 40px;
+}
+@media screen and (min-width: 768px) {
+  .social-list {
+    -webkit-transform: rotate(-90deg) translateY(100%);
+            transform: rotate(-90deg) translateY(100%);
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+  }
 }
 .social-list::before {
   content: "";

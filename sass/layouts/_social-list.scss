@@ -1,9 +1,11 @@
 .social-list {
-   transform: rotate(-90deg) translateY(100%);
-   transform-origin: bottom left;
-
    @include flex(flex, null, center);
    gap: 40px;
+
+   @include tablet{
+   transform: rotate(-90deg) translateY(100%);
+   transform-origin: bottom left;
+   }
 
    &::before {
       content: "";
