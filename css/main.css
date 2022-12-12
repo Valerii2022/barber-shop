@@ -518,6 +518,8 @@ body {
 }
 
 .mobile-menu {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,6 +540,10 @@ body {
   .mobile-menu {
     display: none;
   }
+}
+.mobile-menu .is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 @media screen and (min-width: 768px) {

@@ -46,12 +46,13 @@
           >
           <button type="button" class="header__btn contacts__btn button" data-modal-open>Online-booking</button>
         </div>
-        <button class="header__mobile-btn" >
+        <button class="header__mobile-btn js-open-menu" aria-expanded="false"
+          aria-controls="mobile-menu">
           <svg class="header__burger-icon" width="24" height="16">
             <use href="./images/icons-main.svg#icon-mob-open"></use>
           </svg>
         </button>
-        <div class="mobile-menu">
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
           <nav class="mobile-menu__nav navigation">
             <ul class="nav-list list">
               <li class="nav-list__item"><a href="#about" class="nav-list__link link">About</a></li>
@@ -84,7 +85,7 @@
               >
             </li>
           </ul>
-          <button class="mobile-menu__mobile-btn" >
+          <button class="mobile-menu__mobile-btn js-close-menu" >
             <svg class="mobile-menu__burger-icon" width="24" height="16">
               <use href="./images/icons-main.svg#icon-mob-close"></use>
             </svg>
@@ -650,5 +651,7 @@
     <script src="./js/modal.js"></script>
     <!-- form backdrop script -->
     <script src="./js/modal-form.js"></script>
+    <!-- mobile menu -->
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

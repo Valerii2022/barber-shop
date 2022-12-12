@@ -1,4 +1,5 @@
 .mobile-menu{
+    transform: translateX(100%);
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -11,5 +12,9 @@
     background-color: var(--white-color);
     @include tablet{
         display: none;
+    }
+
+    .is-open{
+        transform: translateX(0);
     }
 }
