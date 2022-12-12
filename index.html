@@ -40,11 +40,55 @@
             </ul>
           </nav>
         </div>
-        <div class="contacts">
+        <div class="header__contacts-wrap contacts">
           <a href="tel:+380441111111" class="contacts__tel header__contacts link"
             >+38 044 111 11 11</a
           >
-          <button type="button" class="contacts__btn button" data-modal-open>Online-booking</button>
+          <button type="button" class="header__btn contacts__btn button" data-modal-open>Online-booking</button>
+        </div>
+        <button class="header__mobile-btn" >
+          <svg class="header__burger-icon" width="24" height="16">
+            <use href="./images/icons-main.svg#icon-mob-open"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu">
+          <nav class="mobile-menu__nav navigation">
+            <ul class="nav-list list">
+              <li class="nav-list__item"><a href="#about" class="nav-list__link link">About</a></li>
+              <li class="nav-list__item">
+                <a href="#prices" class="nav-list__link link">Services and prices</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#barbers" class="nav-list__link link">Barbers</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="#contacts" class="nav-list__link link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="contacts">
+            <a href="tel:+380441111111" class="contacts__tel header__contacts link"
+              >+38 044 111 11 11</a
+            >
+            <button type="button" class="contacts__btn button" data-modal-open>Online-booking</button>
+          </div>
+          <ul class="social-list list">
+            <li class="social-list__item">
+              <a href="#" target="_blank" rel="noopener noreferree" class="social-list__link link"
+                >Instagram</a
+              >
+            </li>
+            <li class="social-list__item">
+              <a href="#" target="_blank" rel="noopener noreferree" class="social-list__link link"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+          <button class="mobile-menu__mobile-btn" >
+            <svg class="mobile-menu__burger-icon" width="24" height="16">
+              <use href="./images/icons-main.svg#icon-mob-close"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -52,7 +96,7 @@
     <main>
       <!--section hero-->
       <section class="hero">
-        <div class="container hero__wrapper">
+        <div class="hero__wrapper">
           <div class="hero__list-wrap">
             <ul class="social-list list">
               <li class="social-list__item">
@@ -73,6 +117,7 @@
             <p class="hero__subtitle">
               We are experts in trendy men`s haircuts. We work quickly, carefully and with style.
             </p>
+            
           </div>
         </div>
       </section>

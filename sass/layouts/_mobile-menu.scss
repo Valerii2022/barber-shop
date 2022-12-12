@@ -1,0 +1,6 @@
+.mobile-menu{
+    display: none;
+    @include tablet{
+        display: none;
+    }
+}

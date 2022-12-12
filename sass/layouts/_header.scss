@@ -20,12 +20,46 @@
       margin-right: 130px;
    }
 
-   &__contacts {
-      margin-right: 40px;
+   &__nav{
+      @media screen and (max-width: 767px){
+         display: none;
+      }
+   }
+
+   &__contacts-wrap{
+      @media screen and (max-width: 767px){
+         display: none;
+      }
    }
 
    &__contacts {
+      margin-right: 40px;
+
       @include transition(color);
       text-transform: uppercase;
+
+      @media screen and (max-width: 767px){
+         display: none;
+      }
+   }
+
+   &__btn{
+      @media screen and (max-width: 767px){
+         display: none;
+      }
+   }
+
+   &__mobile-btn{
+      color: var(--white-color);
+      border: none;
+      background-color: transparent;
+
+      @include tablet{
+         display: none;
+      }
+   }
+
+   &__burger-icon{
+      fill: currentColor;
    }
 }
