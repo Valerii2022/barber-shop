@@ -12,5 +12,10 @@
       margin-right: 20px;
 
       vertical-align: middle;
+
+      @media screen and (max-width: 479px) {
+         width: 30px;
+         height: 2px;
+      }
    }
 }

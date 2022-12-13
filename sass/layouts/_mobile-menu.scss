@@ -12,6 +12,11 @@
    padding-left: 40px;
    background-color: var(--white-color);
    overflow: scroll;
+
+   @media screen and (max-width: 479px) {
+      padding-left: 20px;
+   }
+
    @include tablet {
       display: none;
    }

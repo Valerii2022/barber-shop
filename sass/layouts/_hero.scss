@@ -59,6 +59,10 @@
          background-image: var(--gradient), url(../images/hero1-mob@2x.jpg);
       }
 
+      @media screen and (max-width: 479px) {
+         padding-left: 15px;
+      }
+
       @include tablet {
          padding-top: 272px;
          padding-left: 120px;
