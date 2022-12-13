@@ -1,5 +1,9 @@
 .footer {
-   padding: 56px 0;
+   padding: 44px 0;
+
+   @include tablet {
+      padding: 56px 0;
+   }
 
    &__wrapper {
       @include flex(flex, space-between, null);
@@ -10,8 +14,16 @@
       transform-origin: none;
    }
 
+   &__link {
+      margin-right: 20px;
+   }
+
    &__copyright {
       @include font(600, 11px, 1.3636, 0.2em);
       color: var(--color-on-dark-bg);
+
+      @media screen and (max-width: 767px) {
+         padding-top: 35px;
+      }
    }
 }
