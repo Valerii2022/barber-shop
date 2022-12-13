@@ -1,24 +1,42 @@
 .benefits {
-   padding: 120px 0;
-
    &__wrapper {
-      display: flex;
-      gap: 30px;
+      @include desktop{
+         display: flex;
+         flex-direction: row-reverse;
+         gap: 30px;
+      }
    }
 
    &__list-wrap {
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
-      width: 50%;
-      padding: 0 100px;
+
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+         justify-content: end;
+      }
+
+      @include desktop{
+         width: 50%;
+         padding: 0 100px;
+      }
    }
 
    &__item {
-      width: 170px;
+      width: 193px;
       height: 133px;
-      padding: 20px 24px;
+      padding: 20px 35px;
       background: var(--bg-color);
+
+      @include tablet{
+         width: 210px;
+         padding: 20px 44px;
+      }
+
+      @include desktop {
+         width: 170px;
+         padding: 20px 24px;
+      }
    }
 
    &__numbers {
@@ -45,7 +63,9 @@
    }
 
    &__main {
-      width: 50%;
+      @include desktop{
+         width: 50%;
+      }
    }
 
    &__uptitle {
@@ -54,11 +74,25 @@
 
    &__title {
       margin-bottom: 20px;
-      padding-right: 140px;
+      font-size: 42px;
+      line-height: 1.1667;
+
+      @include tablet {
+         max-width: 430px;
+      }
    }
 
    &__subtitle {
-      padding-right: 70px;
+      font-size: 18px;
+      line-height: 1.6667;
+
+      @media screen and (max-width: 1199px){
+         margin-bottom: 44px;
+      }
+
+      @include tablet{
+         max-width: 520px;
+      }
    }
 }
 

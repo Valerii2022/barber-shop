@@ -1,11 +1,17 @@
 .prices-list {
-   padding: 30px 20px;
-   &__item {
-      @include flex(flex, null, baseline);
+   @include desktop{
+      padding: 30px 20px;
    }
 
-   &__item:not(:last-child) {
+   &__item {
+      @include flex(flex, null, baseline);
       margin-bottom: 20px;
+   }
+
+   &__item:last-child {
+      @include desktop{
+         margin-bottom: 0px;
+      }
    }
 
    &__item:before {
@@ -20,9 +26,14 @@
    }
 
    &__text {
-      @include font(null, 18px, 1.6667, 0.02em);
+      @include font(null, 14px, 1.43, 0.02em);
 
       color: var(--color-on-dark-bg);
+
+      @include tablet{
+         font-size: 18px;
+         line-height: 1.6667;
+      }
    }
 
    &__text:first-child {

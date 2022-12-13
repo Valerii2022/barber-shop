@@ -126,14 +126,22 @@
         </div>
       </section>
       <!--about section-->
-      <section class="about" id="about">
+      <section class="about section" id="about">
         <div class="container about__wrapper">
           <ul class="about__list list">
-            <li class="about__img">
-              <img src="./images/about-01.jpg" alt="" width="270" height="445" />
+            <li class="about__img-wrap">
+              <picture>
+                <source srcset="./images/about-01.jpg 1x, ./images/about-01@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/about-01tab.jpg 1x, ./images/about-01tab@2x.jpg 2x" media="(min-width: 768px)" />
+                <img class="about__img" src="./images/about-01tab.jpg" alt="Barbers work" width="330" />
+              </picture>
             </li>
-            <li class="about__img">
-              <img src="./images/about-02.jpg" alt="" width="270" height="445" />
+            <li class="about__img-wrap">
+              <picture>
+                <source srcset="./images/about-02.jpg 1x, ./images/about-02@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/about-02tab.jpg 1x, ./images/about-02tab@2x.jpg 2x" media="(min-width: 768px)" />
+                <img class="about__img" src="./images/about-02tab.jpg" alt="Barbers work" width="330" />
+              </picture>
             </li>
           </ul>
           <div class="about__main">
@@ -153,7 +161,7 @@
         </div>
       </section>
       <!-- Services and prices section -->
-      <section class="prices" id="prices">
+      <section class="prices section" id="prices">
         <div class="container">
           <p class="prices__uptitle uptitle">Spend your time with the best masters</p>
           <h2 class="prices__title title">Services and prices</h2>
@@ -199,8 +207,16 @@
         </div>
       </section>
       <!-- benefits section -->
-      <section class="benefits">
+      <section class="benefits section">
         <div class="container benefits__wrapper">
+          <div class="benefits__main">
+            <p class="benefits__uptitle uptitle">Old traditional school</p>
+            <h2 class="benefits__title title">¿Why people come to us?</h2>
+            <p class="benefits__subtitle subtitle">
+              Only good things are said about us. But it's better to see and feel 1 time than read
+              10 times.
+            </p>
+          </div>
           <div class="benefits__list-wrap">
             <ul class="benefits__list benefits-first list">
               <li class="benefits__item benefits-first__item">
@@ -231,18 +247,10 @@
               </li>
             </ul>
           </div>
-          <div class="benefits__main">
-            <p class="benefits__uptitle uptitle">Old traditional school</p>
-            <h2 class="benefits__title title">¿Why people come to us?</h2>
-            <p class="benefits__subtitle subtitle">
-              Only good things are said about us. But it's better to see and feel 1 time than read
-              10 times.
-            </p>
-          </div>
         </div>
       </section>
       <!-- Our barbers section -->
-      <section class="barbers" id="barbers">
+      <section class="barbers section" id="barbers">
         <div class="container">
           <p class="barbers__uptitle uptitle">For true enjoyers of the atmosphere</p>
           <h2 class="barbers__title title">Our barbers</h2>
