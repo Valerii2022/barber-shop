@@ -1237,26 +1237,14 @@ body {
 }
 
 .barbers {
-  padding-top: 84px;
-  padding-bottom: 84px;
   background: var(--bg-color);
-}
-@media screen and (min-width: 768px) {
-  .barbers {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .barbers {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
 }
 .barbers__uptitle {
   margin-bottom: 20px;
 }
 .barbers__title {
+  font-size: 42px;
+  line-height: 1.1667;
   margin-bottom: 44px;
 }
 .barbers__list {
@@ -1286,6 +1274,9 @@ body {
   .barbers__item {
     width: calc((100% - 60px) / 3);
   }
+}
+.barbers__img {
+  max-width: 100%;
 }
 .barbers__card {
   padding: 30px 82px 0 82px;
@@ -1342,4 +1333,37 @@ body {
 }
 .social-link__icon-link {
   fill: currentColor;
+}
+
+.portfolio__uptitle {
+  margin-bottom: 71px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__uptitle {
+    margin-bottom: 44px;
+  }
+}
+.portfolio__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+.portfolio__item {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    width: calc((100% - 90px) / 4);
+  }
+}
+.portfolio__item__img {
+  max-width: 100%;
 }/*# sourceMappingURL=main.css.map */
