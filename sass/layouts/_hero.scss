@@ -9,7 +9,8 @@
       padding-left: 15px;
    }
 
-   @extend %margin-auto;
+   margin-right: auto;
+   margin-left: auto;
 
    @include mobile {
       max-width: 480px;

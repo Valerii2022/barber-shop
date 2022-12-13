@@ -1,7 +1,7 @@
 @import "./base/normalize";
 @import "./utils/mixins";
 @import "./base/reset";
-@import "./utils/placeholders";
+// @import "./utils/placeholders";
 @import "./utils/variables";
 @import "./base/common";
 @import "./components/container";
@@ -26,11 +26,11 @@
 @import "./layouts/barbers";
 @import "./layouts/social-link";
 @import "./layouts/portfolio";
-// @import "./layouts/booking-block";
-// @import "./layouts/booking-form";
-// @import "./layouts/contacts-form";
-// @import "./layouts/form";
-// @import "./layouts/address";
+@import "./layouts/booking-block";
+@import "./layouts/booking-form";
+@import "./layouts/contacts-form";
+@import "./layouts/form";
+@import "./layouts/address";
 @import "./layouts/footer";
 // @import "./layouts/backdrop-origin";
 // @import "./layouts/backdrop-form";

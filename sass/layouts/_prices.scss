@@ -1,16 +1,17 @@
 .prices {
    max-width: 480px;
-   @extend %margin-auto;
+   margin-right: auto;
+   margin-left: auto;
    background-color: var(--bg-image-color-2);
    background-size: cover;
    background-position: center;
 
    background-image: url(../images/services-mob.png);
    @include retina {
-    background-image: url(../images/services-mob@2x.png);
+      background-image: url(../images/services-mob@2x.png);
    }
 
-   @include tablet{
+   @include tablet {
       max-width: 768px;
 
       background-image: url(../images/services-tab.png);
@@ -19,11 +20,11 @@
       }
    }
 
-   @include desktop{
+   @include desktop {
       max-width: 1600px;
 
       background-image: url(../images/services.png);
-      @include retina{
+      @include retina {
          background-image: url(../images/services@2x.png);
       }
    }
@@ -37,7 +38,7 @@
       margin-bottom: 44px;
       color: var(--white-color);
 
-      @media screen and (max-width: 1199px){
+      @media screen and (max-width: 1199px) {
          font-size: 40px;
          line-height: 1.175;
       }
@@ -46,47 +47,45 @@
    &__list-wrap {
       margin-bottom: 44px;
 
-      @media screen and (max-width: 767px){
+      @media screen and (max-width: 767px) {
          padding: 30px 20px 10px 40px;
       }
 
-      @media screen and (min-width: 768px) and (max-width: 1199px){
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
          padding: 32px 27px 12px 40px;
       }
 
-      @media screen and (max-width: 1199px){
+      @media screen and (max-width: 1199px) {
          background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
       }
 
-      @include desktop{
-        @include flex(flex, space-between, null);
-        gap: 30px;   
+      @include desktop {
+         @include flex(flex, space-between, null);
+         gap: 30px;
       }
    }
 
    &__prices-list {
-      @include desktop{
+      @include desktop {
          width: calc((100% - 30px) / 2);
       }
-      
    }
 
    &__prices-list:first-child {
-      @include desktop{
-        background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+      @include desktop {
+         background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
       }
-      
    }
 
    &__prices-list:last-child {
-      @include desktop{
-        background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+      @include desktop {
+         background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
       }
-      
    }
 
    &__btn {
       display: block;
-      @extend %margin-auto;
+      margin-right: auto;
+      margin-left: auto;
    }
 }

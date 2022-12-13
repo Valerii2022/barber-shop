@@ -1,12 +1,15 @@
 .form {
    &__field-wrap {
-      display: flex;
-      gap: 30px;
-      margin-bottom: 44px;
+      // display: flex;
+      // gap: 30px;
+      // margin-bottom: 44px;
    }
 
    &__label {
-      width: calc((100% - 30px) / 2);
+      width: 100%;
+      margin-bottom: 44px;
+      display: block;
+      // width: calc((100% - 30px) / 2);
    }
 
    &__input {
@@ -50,6 +53,10 @@
 
       color: var(--white-color);
       background-color: transparent;
+
+      @media screen and (max-width: 479px) {
+         max-width: 250px;
+      }
    }
 
    &__input::placeholder,
@@ -67,5 +74,13 @@
    &__input:hover::placeholder,
    &__textarea:hover::placeholder {
       color: var(--white-color);
+   }
+
+   &__btn {
+      @media screen and (min-width: 480px) and (max-width: 767px) {
+         margin-right: auto;
+         margin-left: auto;
+         display: block;
+      }
    }
 }

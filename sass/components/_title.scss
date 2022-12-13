@@ -1,6 +1,6 @@
 .title {
    font-family: "Raleway";
-   @include font(200, 28px, 1.18, 0.05em);
+   @include font(700, 28px, 1.18, 0.05em);
 
    @include desktop {
       font-size: 42px;

@@ -1,15 +1,41 @@
 .booking-block {
-   background-color: var(--bg-image-color);
-   background-image: url(../images/contacts.png);
-   background-repeat: no-repeat;
-   background-position: right;
-   background-size: calc(50% - 15px) 100%;
-   max-width: 1600px;
-   @extend %margin-auto;
-   padding: 130px 0 120px 0;
+   margin-right: auto;
+   margin-left: auto;
+   @media screen and (max-width: 479px) {
+      max-width: 320px;
+   }
+
+   @media screen and (min-width: 480px) and (max-width: 767px) {
+      width: 480px;
+   }
+
+   @include desktop {
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: calc(50% - 15px) 100%;
+      max-width: 1600px;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 130px 0 120px 0;
+      background-color: var(--bg-image-color);
+      background-image: url(../images/contacts.png);
+      @include retina {
+         background-color: var(--bg-image-color);
+         background-image: url(../images/contacts@2x.png);
+      }
+   }
+
+   // @include tablet {
+   //    background-color: var(--bg-image-color);
+   //    background-image: url(../images/contacts-tab.png);
+   //    @include retina {
+   //       background-color: var(--bg-image-color);
+   //       background-image: url(../images/contacts-tab@2x.png);
+   //    }
+   // }
 
    &__wrapper {
-      display: flex;
-      gap: 30px;
+      // display: flex;
+      // gap: 30px;
    }
 }
