@@ -18,22 +18,28 @@
       top: 83px;
       left: 50%;
 
-      width: 1000px;
-      min-height: 160px;
-      @include flex(flex, space-between, null);
-      gap: 27px;
-
       background-color: transparent;
+
+      @include desktop{
+         @include flex(flex, space-between, null);
+         gap: 27px;
+         max-width: 1000px;
+         min-height: 160px;
+      }
+
    }
 
    &__btn-wrap {
-      width: calc((100% - 27px) / 2);
       padding-top: 40px;
       padding-left: 69px;
       padding-right: 69px;
       display: flex;
       justify-content: space-between;
       align-items: start;
+
+      @include desktop{
+        width: calc((100% - 27px) / 2);
+      }
    }
 
    &__btn {
@@ -52,6 +58,7 @@
 .dark {
    background-color: var(--primary-color);
    color: var(--white-color);
+
 }
 
 .light {
