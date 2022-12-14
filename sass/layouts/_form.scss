@@ -1,15 +1,17 @@
 .form {
    &__field-wrap {
-      // display: flex;
-      // gap: 30px;
-      // margin-bottom: 44px;
+      @include tablet{
+         display: flex;
+         gap: 30px;
+
+      }
+      
    }
 
    &__label {
       width: 100%;
       margin-bottom: 44px;
       display: block;
-      // width: calc((100% - 30px) / 2);
    }
 
    &__input {
@@ -53,10 +55,6 @@
 
       color: var(--white-color);
       background-color: transparent;
-
-      @media screen and (max-width: 479px) {
-         max-width: 250px;
-      }
    }
 
    &__input::placeholder,

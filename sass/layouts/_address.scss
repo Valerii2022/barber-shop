@@ -2,7 +2,8 @@
    @media screen and (max-width: 479px) {
       max-width: 270px;
    }
-   // max-width: 270px;
+
+   
 
    &__link {
       @include transition(color);
@@ -31,6 +32,10 @@
 
    &__map-link {
       font-weight: 700;
+
+      @include desktop{
+         max-width: 250px;
+      }
    }
 
    &__tel-link,
