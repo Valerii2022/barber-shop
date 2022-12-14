@@ -1,5 +1,5 @@
 .prices-list {
-   @include desktop{
+   @include desktop {
       padding: 30px 20px;
    }
 
@@ -9,7 +9,7 @@
    }
 
    &__item:last-child {
-      @include desktop{
+      @include desktop {
          margin-bottom: 0px;
       }
    }
@@ -19,18 +19,22 @@
       margin-right: 12px;
       margin-left: 12px;
       height: 1px;
-      width: 50px;
+      width: 2px;
       flex-grow: 1;
       display: block;
       background-color: rgba(157, 164, 189, 0.12);
    }
 
    &__text {
+      @media screen and (max-width: 335px) {
+         font-size: 12px;
+      }
+
       @include font(null, 14px, 1.43, 0.02em);
 
       color: var(--color-on-dark-bg);
 
-      @include tablet{
+      @include tablet {
          font-size: 18px;
          line-height: 1.6667;
       }
