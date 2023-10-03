@@ -3,11 +3,17 @@
     openModalBtn: document.querySelectorAll('[data-modal-open]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
+    sendBtn: document.querySelectorAll('[data-send-info]'),
   };
 
-  refs.openModalBtn.forEach(element => element.addEventListener('click', toggleModal));
+  let name;
+  let phone;
+  let email;
+  let barber;
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtn.forEach(element => element.addEventListener('click', toggleModal));
+  refs.sendBtn.forEach(element => addEventListener('submit', handleSendSubmitBtn));
+
   refs.closeModalBtn.addEventListener('click', toggleModal);
   refs.modal.addEventListener('click', handleBackdropClick);
 
@@ -20,7 +26,6 @@
   function handleKeyDown(e) {
     if (e.code === 'Escape') {
       refs.modal.classList.add('is-hidden');
-      document.documentElement.classList.toggle('no-scroll');
       window.removeEventListener('keydown', handleKeyDown);
     }
   }
@@ -28,7 +33,19 @@
   function handleBackdropClick(e) {
     if (e.target === refs.modal) {
       refs.modal.classList.toggle('is-hidden');
-      document.documentElement.classList.toggle('no-scroll');
     }
+  }
+
+  function handleSendSubmitBtn(e) {
+    e.preventDefault();
+    name = e.target[0].value;
+    phone = e.target[1].value;
+    if (e.target[1].value) {
+      email = e.target[2].value;
+    }
+    e.target[0].value = '';
+    e.target[1].value = '';
+    e.target[2].value = '';
+    refs.modal.classList.add('is-hidden');
   }
 })();
