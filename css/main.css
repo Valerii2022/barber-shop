@@ -320,10 +320,8 @@ body.no-scroll {
 }
 
 .button {
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   border: 1px solid var(--accent-color);
   border-radius: 25px;
@@ -1738,8 +1736,7 @@ body.no-scroll {
   font-weight: 400;
 }
 .address__mail-link {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
 .address__map-link .address__social-network {
@@ -1880,7 +1877,7 @@ body.no-scroll {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 108, 0, 0.5);
+  background-color: var(--uptitle-secondary-color);
 }
 .backdrop-with-form__modal {
   -webkit-transform: translate(-50%, -50%);
@@ -1910,10 +1907,8 @@ body.no-scroll {
   }
 }
 .backdrop-with-form__close-btn {
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1928,7 +1923,7 @@ body.no-scroll {
   position: absolute;
   top: -10px;
   right: -10px;
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--accent-color);
   border-radius: 50%;
   cursor: pointer;
   outline: none;
@@ -1936,8 +1931,8 @@ body.no-scroll {
   color: var(--primary-color);
 }
 .backdrop-with-form__close-btn:hover, .backdrop-with-form__close-btn:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  fill: var(--white-color);
+  background-color: var(--accent-color);
 }
 .backdrop-with-form__close-icon {
   fill: currentColor;

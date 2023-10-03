@@ -1,20 +1,17 @@
 .footer {
-   padding-top: 44px;
-   padding-bottom: 20px;
+  padding-top: 44px;
+  padding-bottom: 20px;
 
-   &__wrapper {
-      @include flex(flex, space-between, null);
-   }
-   &__list {
-      transform: none;
-      transform-origin: none;
-   }
+  &__wrapper {
+    @include flex(flex, space-between, null);
+  }
+  &__list {
+    transform: none;
+    transform-origin: none;
+  }
 
-   &__link {
-   }
-
-   &__copyright {
-      @include font(600, 11px, 1.3636, 0.2em);
-      color: var(--color-on-dark-bg);
-   }
+  &__copyright {
+    @include font(600, 11px, 1.3636, 0.2em);
+    color: var(--color-on-dark-bg);
+  }
 }
