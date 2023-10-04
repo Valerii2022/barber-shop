@@ -35,13 +35,20 @@ function handleBackdropClick(e) {
 
 function handleSendSubmitBtn(e) {
   e.preventDefault();
+
+  let barberName;
+
+  if (e.target[4]?.checked) barberName = e.target[4].id;
+  if (e.target[5]?.checked) barberName = e.target[4].id;
+  if (e.target[6]?.checked) barberName = e.target[4].id;
+
   e.target[3].name && e.target[4].name
     ? console.table({
         [e.target[0].name]: e.target[0].value,
         [e.target[1].name]: e.target[1].value,
         [e.target[2].name]: e.target[2].value,
         [e.target[3].name]: e.target[3]?.value,
-        [e.target[4].name]: e.target[4]?.value,
+        barber: barberName,
       })
     : console.table({
         [e.target[0].name]: e.target[0].value,
