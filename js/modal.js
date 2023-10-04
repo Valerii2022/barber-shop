@@ -53,6 +53,7 @@ function handleSendSubmitBtn(e) {
   e.target[1].value = '';
   e.target[2].value = '';
   refs.modal.classList.add('is-hidden');
+  document.body.classList.remove('no-scroll');
   setTimeout(handleSuccessModalOpen, 1000);
   setTimeout(handleSuccessModalClose, 4000);
 }
