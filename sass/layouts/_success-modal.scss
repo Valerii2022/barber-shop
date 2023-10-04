@@ -1,0 +1,12 @@
+.success-title-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.success-title {
+  @include font(700, 18px, 1.15, 0.03em);
+  text-align: center;
+
+  color: var(--primary-color);
+}

@@ -1798,14 +1798,12 @@ body.no-scroll {
   top: 50%;
   left: 50%;
   width: 450px;
-  min-height: 650px;
   background-color: var(--white-color);
   z-index: 100;
 }
 @media screen and (max-width: 479px) {
   .backdrop-with-form__modal {
     width: 305px;
-    min-height: 550px;
     padding: 20px;
   }
 }
@@ -2131,4 +2129,24 @@ body.no-scroll {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.success-title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.success-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--primary-color);
 }/*# sourceMappingURL=main.css.map */

@@ -1,6 +1,7 @@
 .backdrop-with-form {
   z-index: 200;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   position: fixed;
   top: 0;
@@ -21,13 +22,11 @@
     top: 50%;
     left: 50%;
     width: 450px;
-    min-height: 650px;
     background-color: var(--white-color);
     z-index: 100;
 
     @media screen and (max-width: 479px) {
       width: 305px;
-      min-height: 550px;
       padding: 20px;
     }
 
