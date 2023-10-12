@@ -2,13 +2,14 @@ const refs = {
   openModalBtn: document.querySelectorAll('[data-modal-open]'),
   closeModalBtn: document.querySelector('[data-modal-close]'),
   modal: document.querySelector('[data-modal]'),
-  sendBtn: document.querySelectorAll('[data-send-info]'),
+  form: document.querySelectorAll('[data-submit]'),
   successModal: document.querySelector('[data-success-modal]'),
+  successModalCloseBtn: document.querySelector('[data-success-modal-close]'),
 };
 
 refs.openModalBtn.forEach(element => element.addEventListener('click', toggleModal));
-refs.sendBtn.forEach(element => addEventListener('submit', handleSendSubmitBtn));
-
+refs.form.forEach(element => element.addEventListener('submit', handleSendSubmitBtn));
+refs.successModalCloseBtn.addEventListener('click', handleCloseSuccessBtnClick);
 refs.closeModalBtn.addEventListener('click', toggleModal);
 refs.modal.addEventListener('click', handleBackdropClick);
 
@@ -35,33 +36,20 @@ function handleBackdropClick(e) {
 
 function handleSendSubmitBtn(e) {
   e.preventDefault();
+  console.dir(e.currentTarget);
 
-  let barberName;
+  const formData = new FormData(e.currentTarget);
+  const data = {};
+  formData.forEach((value, key) => {
+    data[key] = value;
+  });
 
-  if (e.target[4]?.checked) barberName = e.target[4].id;
-  if (e.target[5]?.checked) barberName = e.target[4].id;
-  if (e.target[6]?.checked) barberName = e.target[4].id;
+  console.table(data);
 
-  e.target[3].name && e.target[4].name
-    ? console.table({
-        [e.target[0].name]: e.target[0].value,
-        [e.target[1].name]: e.target[1].value,
-        [e.target[2].name]: e.target[2].value,
-        [e.target[3].name]: e.target[3]?.value,
-        barber: barberName,
-      })
-    : console.table({
-        [e.target[0].name]: e.target[0].value,
-        [e.target[1].name]: e.target[1].value,
-        [e.target[2].name]: e.target[2].value,
-      });
-
-  e.target[0].value = '';
-  e.target[1].value = '';
-  e.target[2].value = '';
+  refs.form.forEach(el => el.reset());
   refs.modal.classList.add('is-hidden');
   document.body.classList.remove('no-scroll');
-  setTimeout(handleSuccessModalOpen, 1000);
+  setTimeout(handleSuccessModalOpen, 500);
   setTimeout(handleSuccessModalClose, 4000);
 }
 
@@ -70,5 +58,9 @@ function handleSuccessModalOpen() {
 }
 
 function handleSuccessModalClose() {
+  refs.successModal.classList.add('is-hidden');
+}
+
+function handleCloseSuccessBtnClick() {
   refs.successModal.classList.add('is-hidden');
 }
