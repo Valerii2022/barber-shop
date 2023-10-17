@@ -36,7 +36,6 @@ function handleBackdropClick(e) {
 
 function handleSendSubmitBtn(e) {
   e.preventDefault();
-  console.dir(e.currentTarget);
 
   const formData = new FormData(e.currentTarget);
   const data = {};
